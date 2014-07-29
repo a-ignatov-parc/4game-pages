@@ -95,11 +95,8 @@ q
 }i
 {
     font-style: normal;
-}.pAtlTour_bHiddenInfo
-{
-    margin: 0 0 55px;
 }.pAtlTour_bHiddenInfo__eLinkContainer
-{margin: 0 0 30px;
+{margin: 0 0 25px;
 
     text-align: center;
 }.pAtlTour_bHiddenInfo__eLinkCloseContainer
@@ -110,13 +107,18 @@ q
 {
     margin: 0 20px;
 }.pAtlTour_bHiddenInfo__eContainer
-{overflow: hidden;max-height: 0;-webkit-transition: max-height 600ms linear,overflow 0ms linear 600ms;transition: max-height 600ms linear,overflow 0ms linear 600ms;
-
+{
+    overflow: hidden;max-height: 0;margin: 0 0 30px;-webkit-transition: max-height 600ms linear,margin 600ms linear,overflow 0ms linear 600ms;transition: max-height 600ms linear,margin 600ms linear,overflow 0ms linear 600ms;
+}.pAtlTour_bHiddenInfo__eContainer__mType_rules
+{
     background: url('../img/hiddenInfoPattern.png');
+}.pAtlTour_bHiddenInfo__eContainer__mType_bottom
+{
+    margin: 0;
 }.pAtlTour_bHiddenInfo__eContainer__mType_opened
 {overflow: visible;
 
-    max-height: 2000px;
+    max-height: 2000px;margin: 0 0 55px;-webkit-transition-delay: 0s;transition-delay: 0s;
 }.pAtlTour_bHiddenInfo__eTitle
 {font: 700 25px/30px 'PT Sans','Trebuchet MS',Arial,sans-serif;margin: 0 0 19px;padding: 32px 0 0;text-align: center;
 
@@ -307,4 +309,22 @@ q
 }.pAtlTour_bRegister__eButton
 {
     margin: 0 0 15px;
+}.pAtlTour_bSchedule
+{margin: 0 0 34px;
+    padding: 15px 0 0;
+}.pAtlTour_bSchedule__eTitle
+{font: 700 30px/40px 'PT Sans','Trebuchet MS',Arial,sans-serif;margin: 0 0 32px;text-align: center;
+
+    color: #150405;
+}.pAtlTour_bSchedule__eContainer
+{padding: 50px 0;text-align: center;
+
+    background: #444;
+}.pAtlTour_bSchedule__eGames
+{
+    width: 800px;height: 1200px;
+}.pAtlTour_bPlayer
+{width: 800px;height: 480px;margin: 40px auto 45px;
+
+    background: url('../img/player.jpg') no-repeat;
 }
