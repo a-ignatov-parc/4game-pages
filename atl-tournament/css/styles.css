@@ -95,6 +95,30 @@ q
 }i
 {
     font-style: normal;
+}.pAtlTour_bFights__eTitle
+{
+    font: 700 30px/40px 'PT sans','Trebuchet MS',Arial,sans-serif;margin: 0 0 20px;text-align: center;color: #150405;
+}.pAtlTour_bFights__eFightsContainer
+{margin: 0 30px 40px;
+
+    text-align: justify;
+}.pAtlTour_bFights__eFightsContainer:after
+{display: inline-block;visibility: hidden;overflow: hidden;
+
+    width: 100%;height: 0;content: '';
+}.pAtlTour_bFights__eFight
+{display: inline-block;
+
+    width: 198px;padding: 10px;vertical-align: top;color: #0084b7;
+}.pAtlTour_bFights__eFight:hover
+{
+    color: #f22;
+}.pAtlTour_bFights__eFightImage
+{
+    margin: 0 0 7px;
+}.pAtlTour_bFights__eFightSign
+{
+    font-size: 13px;line-height: 18px;
 }.pAtlTour_bHiddenInfo__eLinkContainer
 {margin: 0 0 25px;
 
@@ -254,6 +278,10 @@ q
 }.pAtlTour_bPedestal
 {
     position: relative;width: 960px;height: 520px;margin: 0 auto 23px;background: no-repeat url('../img/stone.jpg') 0 257px;
+}.pAtlTour_bPedestal__mType_winners
+{height: 450px;margin: 0 auto 69px;
+
+    background: no-repeat url('../img/winners.jpg') 87px -27px;
 }.pAtlTour_bPedestal__eMoney
 {
     position: absolute;
@@ -278,12 +306,27 @@ q
 }.pAtlTour_bPedestal__ePrize__mPlace_third
 {
     top: 413px;left: 699px;
+}.pAtlTour_bPedestal__ePrize__mWinner_first
+{
+    top: 58px;left: 405px;
+}.pAtlTour_bPedestal__ePrize__mWinner_second
+{
+    top: 112px;left: 105px;
+}.pAtlTour_bPedestal__ePrize__mWinner_third
+{
+    top: 142px;left: 682px;
 }.pAtlTour_bPedestal__ePrizeTitle
 {
     font: 700 25px/30px 'PT Sans','Trebuchet MS',Arial,sans-serif;margin: 0 0 5px;
 }.pAtlTour_bPedestal__ePrizeText
 {
     color: #464646;
+}.pAtlTour_bPedestal__ePrizeTeam
+{
+    color: #010101;
+}.pAtlTour_bPedestal__ePrizeNames
+{
+    font-size: 13px;line-height: 18px;color: #464646;
 }.pAtlTour_bPedestal__eSalamandra
 {
     position: absolute;-webkit-transition: all 300ms ease-out;transition: all 300ms ease-out;
@@ -300,6 +343,10 @@ q
 {margin: 0 0 54px;
 
     text-align: center;
+}.pAtlTour_bPlayer
+{width: 800px;height: 480px;margin: 40px auto 45px;
+
+    background: url('../img/player.jpg') no-repeat;
 }.pAtlTour_bRegister
 {
     margin: 0 0 55px;text-align: center;
@@ -323,8 +370,4 @@ q
 }.pAtlTour_bSchedule__eGames
 {
     width: 800px;height: 1200px;
-}.pAtlTour_bPlayer
-{width: 800px;height: 480px;margin: 40px auto 45px;
-
-    background: url('../img/player.jpg') no-repeat;
 }
