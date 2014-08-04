@@ -1,6 +1,7 @@
 ---
 title: "Lineage 2 – Обновление Aртея – Зоны охоты"
 layout: "ertheia"
+page: "zones"
 ---
 
 # Зоны охоты

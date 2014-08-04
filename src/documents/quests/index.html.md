@@ -1,6 +1,7 @@
 ---
 title: "Lineage 2 – Обновление Aртея – Квесты"
 layout: "ertheia"
+page: "quests"
 ---
 
 # Квесты

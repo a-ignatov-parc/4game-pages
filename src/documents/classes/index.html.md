@@ -1,6 +1,7 @@
 ---
 title: "Lineage 2 – Обновление Aртея – Классы"
 layout: "ertheia"
+page: "classes"
 ---
 
 # Классы

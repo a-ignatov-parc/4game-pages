@@ -1,6 +1,7 @@
 ---
 title: "Lineage 2 – Обновление Aртея – Предметы"
 layout: "ertheia"
+page: "items"
 ---
 
 # Предметы

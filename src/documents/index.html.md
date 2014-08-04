@@ -1,6 +1,7 @@
 ---
 title: "Lineage 2 – Обновление Aртея"
 layout: "ertheia"
+page: "index"
 ---
 
 # Системные изменения
