@@ -10,6 +10,7 @@
     "docpad-plugin-eco": "~2.0.3",
     "docpad-plugin-jade": "~2.7.0",
     "docpad-plugin-less": "~2.4.1",
+    "docpad-plugin-markdown": "^2.0.3",
     "docpad-plugin-marked": "~2.2.1",
     "gulp": "~3.8.6",
     "gulp-autoprefixer": "~0.0.8",
