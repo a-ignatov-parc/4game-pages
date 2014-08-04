@@ -85,38 +85,78 @@
     max-width: 960px;
     margin-left: 240px;
     padding-bottom: 50px;
+    padding-top: 1px;
     font-size: 18px;
     background: #fff;
 
-    h1{
-      text-align: center;
-      width:725px;
-      padding: 66px 0 76px 0;
-      margin: 0 auto;
-      font-size: 70px;
-      font-weight: 500;
-      margin-bottom: 8px;
-    }
-    .bDescription{
-      font-family: Georgia, sans-serif;
-      font-size: 18px;
-      font-style: italic;
-      line-height: 28px;
-    }
-    h2{
-      font-size: 30px;
-      margin: 0 0 22px 0;
-      padding: 58px 0 0 98px;
+	h1 {
+		margin: 70px 90px 20px;
+		font: 70px/70px 'PT Sans', sans-serif;
+		text-align: center;
+	}
+
+	h2 {
+		font: bold 30px/32px 'PT Sans', sans-serif;
+		margin: 35px 100px 20px;
+	}
+
+	p {
+		margin: 16px 100px;
+	}
+    
+    p > img {
+		display: block;
+		margin: 0 auto;
     }
 
-    ol{
-      li{
-        list-style-type: decimal;
-        list-style-position: inside;
-        letter-spacing: 0.03em;
-        text-indent: 62px;
-        font-family: Arial, sans-serif;
-        .bPatchnote__eListItemName{
+	hr {
+		background: none;
+		border: none;
+		margin: 0;
+	}
+
+	ul {
+		list-style: none;
+		margin: 20px 100px 50px;
+		padding: 0;
+		
+		li {
+			position: relative;
+			margin: 0 0 12px 0;
+			&:before {
+				position: absolute;
+				left: -1.3em;
+				top: 0;
+				content: '—';
+			}
+
+			p {
+				margin: 0;
+			}
+
+			ul {
+				margin: 8px 0 22px 30px;
+			}
+		}
+	}
+
+    ol {
+	  margin: 20px 100px 50px;
+	  padding: 0;
+
+      li {
+        font: 18px/28px Arial, sans-serif;
+        margin: 0 0 16px 0;
+
+		p {
+			margin: 0;
+		}
+		
+		ul {
+			margin: 8px 0 22px 30px;
+		}
+
+	    .bPatchnote__eListItemName{
           text-indent: 0px;
           display: inline-block;
           width: 700px;
@@ -139,6 +179,90 @@
         }
       }
     }
+
+	blockquote {
+		margin: 0 0 60px;
+	    padding: 36px 100px;
+		background: #f6f4f4;
+		
+		/* таблицы и заголовки обрамляются в цитатах, чтобы сделать серый фон вокруг них */
+		h2 {
+			margin: 0;
+			padding: 0 0 20px;
+			text-align: center;
+		}
+		p {
+			margin: 16px 0 24px 0;
+			font: italic 14px/24px Arial, sans-serif;
+			text-align: center;
+			color: #9d9b9b;
+		}
+		
+		table {
+			position: relative;
+			left: -20px;
+			width: 100%;
+			border-spacing: 0;
+			border-collapse: collapse;
+			
+			tbody > tr:hover > td {
+				background: #eeebeb;
+			}
+			th {
+				padding: 0 10px 0 20px;
+				font: bold 14px/24px Arial, sans-serif;
+				text-align: left;
+				vertical-align: top;
+				border-bottom: 1px solid #dddbdb;
+			}
+			td {
+				padding: 8px 10px 9px 20px;
+				font: 14px/24px Arial, sans-serif;
+				text-align: left;
+				vertical-align: top;
+			}
+		}
+		
+		blockquote {
+			padding: 0;
+			margin: 0;
+			
+			table {
+				width: 50%;
+				float: left;
+			}
+			
+			&:after {
+				display: block;
+				height: 2px;
+				content: ' ';
+				clear: left;
+			}
+		}
+		
+		ul {
+			margin: 0 0 22px 30px;
+		}
+	}
+	ol + blockquote,
+	ul + blockquote {
+		margin-top: -20px;
+	}
+
+	h1 + blockquote {
+		/* обычный параграф в цитате – это lead-текст под заголовком */
+		background: transparent;
+		padding: 0;
+		margin: 0;
+		p {
+			margin: 20px 90px 80px;
+			font: italic 18px/28px Georgia, sans-serif;
+			text-align: center;
+			color: #000;
+		}
+	}
+
+    
     .bStandartTypeList{
       list-style: none;
       margin-left: 134px;
