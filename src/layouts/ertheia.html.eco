@@ -210,13 +210,18 @@
             </div>
         </div>
 
+		<a name="patchnotes" id="patchnotes"></a>
 		<section class="bPatchnotePage">
 			<div class="bPatchnoteMenuContainer">
-				<h3>Обновление 14.5
-					<span class="bPatchnoteMenu__eDate">с 9.07.2014</span>
+				<h3 class="bPatchnote__menuTitle">Обновление 14.5
+					<span class="bPatchnote__menuDate">с 9.07.2014</span>
 				</h3>
-				<ul class="bPatchnoteMenu">
-					<% if (@document.page == "index"): %><li class="active"><% else: %><li><% end %>
+				<ul class="bPatchnote__menuItems">
+					<% if (@document.page == "index"): %>
+						<li class="bPatchnote__menuItem bPatchnote__menuItem_active">
+					<% else: %>
+						<li class="bPatchnote__menuItem">
+					<% end %>
 						<a href="/">Системные изменения</a>
 <!--
 						<ul>
@@ -230,20 +235,40 @@
 						</ul>
 -->
 					</li>
-					<% if (@document.page == "classes"): %><li class="active"><% else: %><li><% end %>
-						<a href="/classes/">Классы</a>
+					<% if (@document.page == "classes"): %>
+						<li class="bPatchnote__menuItem bPatchnote__menuItem_active">
+					<% else: %>
+						<li class="bPatchnote__menuItem">
+					<% end %>
+						<a href="/classes/#patchnotes">Классы</a>
 					</li>
-					<% if (@document.page == "zones"): %><li class="active"><% else: %><li><% end %>
-						<a href="/zones/">Зоны охоты</a>
+					<% if (@document.page == "zones"): %>
+						<li class="bPatchnote__menuItem bPatchnote__menuItem_active">
+					<% else: %>
+						<li class="bPatchnote__menuItem">
+					<% end %>
+						<a href="/zones/#patchnotes">Зоны охоты</a>
 					</li>
-					<% if (@document.page == "items"): %><li class="active"><% else: %><li><% end %>
-						<a href="/items/">Предметы</a>
+					<% if (@document.page == "items"): %>
+						<li class="bPatchnote__menuItem bPatchnote__menuItem_active">
+					<% else: %>
+						<li class="bPatchnote__menuItem">
+					<% end %>
+						<a href="/items/#patchnotes">Предметы</a>
 					</li>
-					<% if (@document.page == "quests"): %><li class="active"><% else: %><li><% end %>
-						<a href="/quests/">Квесты</a>
+					<% if (@document.page == "quests"): %>
+						<li class="bPatchnote__menuItem bPatchnote__menuItem_active">
+					<% else: %>
+						<li class="bPatchnote__menuItem">
+					<% end %>
+						<a href="/quests/#patchnotes">Квесты</a>
 					</li>
-					<% if (@document.page == "other"): %><li class="active"><% else: %><li><% end %>
-						<a href="/other/">Прочие изменения</a>
+					<% if (@document.page == "other"): %>
+						<li class="bPatchnote__menuItem bPatchnote__menuItem_active">
+					<% else: %>
+						<li class="bPatchnote__menuItem">
+					<% end %>
+						<a href="/other/#patchnotes">Прочие изменения</a>
 					</li>
 				</ul>
 			</div>

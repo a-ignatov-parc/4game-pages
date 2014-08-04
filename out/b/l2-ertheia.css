@@ -1144,63 +1144,63 @@
   float: left;
   font-size: 18px;
 }
-.bPatchnoteMenuContainer .bPatchnoteMenuTitle {
+.bPatchnoteMenuContainer .bPatchnote__menuTitle {
   padding: 22px 0 6px 31px;
   margin: 0;
   color: black;
   font-size: 18px;
 }
-.bPatchnoteMenuContainer .bPatchnoteMenu__eDate {
+.bPatchnoteMenuContainer .bPatchnote__menuDate {
+  display: block;
   opacity: 0.5;
   font-size: 11px;
-  display: block;
 }
-.bPatchnoteMenuContainer .bPatchnoteMenu {
+.bPatchnoteMenuContainer .bPatchnote__menuItems {
   margin: 0;
   padding: 0;
   background: #f5f7f8;
   list-style: none;
 }
-.bPatchnoteMenuContainer .bPatchnoteMenu > li {
+.bPatchnoteMenuContainer .bPatchnote__menuItem {
   margin: 0;
   padding: 0;
-  height: 39px;
-  line-height: 34px;
+  line-height: 39px;
   border-bottom: 1px solid #d7dfe4;
   text-indent: 32px;
   list-style: none;
 }
-.bPatchnoteMenuContainer .bPatchnoteMenu > li a {
+.bPatchnoteMenuContainer .bPatchnote__menuItem a {
   color: inherit;
   text-decoration: none;
 }
-.bPatchnoteMenuContainer .bPatchnoteMenu > li.active {
+.bPatchnoteMenuContainer .bPatchnote__menuItem_active {
   height: auto;
-  padding-bottom: 13px;
+  zpadding-bottom: 13px;
+  background: #ffcc00;
 }
-.bPatchnoteMenuContainer .bPatchnoteMenu > li:not(.active):hover {
+.bPatchnoteMenuContainer .bPatchnote__menuItem:not(.active):hover {
   background: #dfe3e5;
   cursor: pointer;
 }
-.bPatchnoteMenuContainer .bPatchnoteMenu > li ul {
+.bPatchnoteMenuContainer .bPatchnote__menuItem ul {
   margin: 0;
   padding: 0;
   font-size: 14px;
 }
-.bPatchnoteMenuContainer .bPatchnoteMenu > li ul li {
+.bPatchnoteMenuContainer .bPatchnote__menuItem ul li {
   height: 24px;
   line-height: 24px;
   padding: 0;
   margin: 4px 0 8px 0;
   text-indent: 48px;
 }
-.bPatchnoteMenuContainer .bPatchnoteMenu > li ul li.active {
+.bPatchnoteMenuContainer .bPatchnote__menuItem ul li.active {
   background: #ffcc00;
 }
-.bPatchnoteMenuContainer .bPatchnoteMenu > li ul li:last-child {
+.bPatchnoteMenuContainer .bPatchnote__menuItem ul li:last-child {
   margin-bottom: 4px;
 }
-.bPatchnoteMenuContainer .bPatchnoteMenu > li ul li:not(.active):hover {
+.bPatchnoteMenuContainer .bPatchnote__menuItem ul li:not(.active):hover {
   background: #e9eaeb;
   cursor: pointer;
 }
@@ -1233,14 +1233,14 @@
   margin: 0 0 22px 0;
   padding: 58px 0 0 98px;
 }
-.bPatchnoteContent ul li {
+.bPatchnoteContent ol li {
   list-style-type: decimal;
   list-style-position: inside;
   letter-spacing: 0.03em;
   text-indent: 62px;
   font-family: Arial, sans-serif;
 }
-.bPatchnoteContent ul li .bPatchnote__eListItemName {
+.bPatchnoteContent ol li .bPatchnote__eListItemName {
   text-indent: 0px;
   display: inline-block;
   width: 700px;
@@ -1252,10 +1252,10 @@
   top: -3px;
   letter-spacing: -0.01em;
 }
-.bPatchnoteContent ul li > section {
+.bPatchnoteContent ol li > section {
   text-indent: 0;
 }
-.bPatchnoteContent ul li > section h2 {
+.bPatchnoteContent ol li > section h2 {
   font-size: 30px;
   text-align: center;
   letter-spacing: 0;
