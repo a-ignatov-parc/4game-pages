@@ -2,10 +2,12 @@ $( document ).ready(function() {
 
     /* --------------- [ Start ]  ---------- */
 
-    $('body').preload(function(){
-        $('.bSetUnneededItems').remove();
-        $('.pL2Ertheia_bPlanets').delay(300).fadeIn(300).addClass('pL2Ertheia_bPlanets_mStart');
-    });
+	if ($('body').preload) {
+	    $('body').preload(function(){
+	        $('.bSetUnneededItems').remove();
+	        $('.pL2Ertheia_bPlanets').delay(300).fadeIn(300).addClass('pL2Ertheia_bPlanets_mStart');
+	    });
+	}
 
 
 
