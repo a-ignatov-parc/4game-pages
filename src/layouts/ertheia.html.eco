@@ -232,39 +232,39 @@
 					<% else: %>
 						<li class="bPatchnote__menuItem">
 					<% end %>
-						<a href="/classes/#patchnotes">Классы</a>
+						<a href="/classes/#patchnotes" data-reload-sections="pageView: #PatchnotesContent">Классы</a>
 					</li>
 					<% if (@document.page == "zones"): %>
 						<li class="bPatchnote__menuItem bPatchnote__menuItem_active">
 					<% else: %>
 						<li class="bPatchnote__menuItem">
 					<% end %>
-						<a href="/zones/#patchnotes">Зоны охоты</a>
+						<a href="/zones/#patchnotes" data-reload-sections="pageView: #PatchnotesContent">Зоны охоты</a>
 					</li>
 					<% if (@document.page == "items"): %>
 						<li class="bPatchnote__menuItem bPatchnote__menuItem_active">
 					<% else: %>
 						<li class="bPatchnote__menuItem">
 					<% end %>
-						<a href="/items/#patchnotes">Предметы</a>
+						<a href="/items/#patchnotes" data-reload-sections="pageView: #PatchnotesContent">Предметы</a>
 					</li>
 					<% if (@document.page == "quests"): %>
 						<li class="bPatchnote__menuItem bPatchnote__menuItem_active">
 					<% else: %>
 						<li class="bPatchnote__menuItem">
 					<% end %>
-						<a href="/quests/#patchnotes">Квесты</a>
+						<a href="/quests/#patchnotes" data-reload-sections="pageView: #PatchnotesContent">Квесты</a>
 					</li>
 					<% if (@document.page == "other"): %>
 						<li class="bPatchnote__menuItem bPatchnote__menuItem_active">
 					<% else: %>
 						<li class="bPatchnote__menuItem">
 					<% end %>
-						<a href="/other/#patchnotes">Прочие изменения</a>
+						<a href="/other/#patchnotes" data-reload-sections="pageView: #PatchnotesContent">Прочие изменения</a>
 					</li>
 				</ul>
 			</div>
-			<div class="bPatchnoteContent">
+			<div class="bPatchnoteContent" id="PatchnotesContent" data-target="PatchnotesContent">
 				<%- @content %>
 			</div>
 		</section>
