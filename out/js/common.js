@@ -2,7 +2,7 @@ $( document ).ready(function() {
 
     /* --------------- [ Start ]  ---------- */
 
-    $('.pL2Ertheia').preload(function(){
+    $('body').preload(function(){
         $('.bSetUnneededItems').remove();
         $('.pL2Ertheia_bPlanets').delay(300).fadeIn(300).addClass('pL2Ertheia_bPlanets_mStart');
     });
