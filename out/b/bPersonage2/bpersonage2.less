@@ -6,7 +6,23 @@
 		width:737px;
 		height: 900px;
 
-		background: url('bPersonage2/ePersonage2.png') no-repeat center top transparent;
+		background-repeat: no-repeat;
+		background-position: center top;
+		.webp & {
+			background-image: url('bPersonage2/ePersonage2.webp');
+		}
+		.jp2 & {
+			background-image: url('bPersonage2/ePersonage2.jp2');
+		}
+		.jpx & {
+			background-image: url('bPersonage2/ePersonage2.wdp');
+		}
+		.svg & {
+			background-image: url('bPersonage2/ePersonage2.svg');
+		}
+		.png & {
+			background-image: url('bPersonage2/ePersonage2.optim.png');
+		} 
 		opacity: 0;
 
 		-webkit-transition: opacity 0.3s;
@@ -20,7 +36,23 @@
 			width: 355px;
 			height: 299px;
 
-			background: url('bPersonage2/ePersonage2.png') no-repeat  -129px 10px transparent;
+			background-repeat: no-repeat;
+			background-position: -129px 10px;
+			.webp & {
+				background-image: url('bPersonage2/ePersonage2.webp');
+			}
+			.jp2 & {
+				background-image: url('bPersonage2/ePersonage2.jp2');
+			}
+			.jpx & {
+				background-image: url('bPersonage2/ePersonage2.wdp');
+			}
+			.svg & {
+				background-image: url('bPersonage2/ePersonage2.svg');
+			}
+			.png & {
+				background-image: url('bPersonage2/ePersonage2.optim.png');
+			} 
 			pointer-events: all;
 		}
 	}

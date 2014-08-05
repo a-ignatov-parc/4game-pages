@@ -65,9 +65,25 @@
   height: 900px;
   top: 86px;
   left: 12px;
-  background: url('bPersonage1/ePersonage1.png') no-repeat center top transparent;
+  background-repeat: no-repeat;
+  background-position: center top;
   -webkit-transition: opacity 0.3s 0.1s;
   transition: opacity 0.3s 0.1s;
+}
+.webp .pL2Ertheia_bPersonage1 {
+  background-image: url('bPersonage1/ePersonage1.webp');
+}
+.jp2 .pL2Ertheia_bPersonage1 {
+  background-image: url('bPersonage1/ePersonage1.jp2');
+}
+.jpx .pL2Ertheia_bPersonage1 {
+  background-image: url('bPersonage1/ePersonage1.wdp');
+}
+.svg .pL2Ertheia_bPersonage1 {
+  background-image: url('bPersonage1/ePersonage1.svg');
+}
+.png .pL2Ertheia_bPersonage1 {
+  background-image: url('bPersonage1/ePersonage1.optim.png');
 }
 .pL2Ertheia_bPersonage1__eHeadPersonage {
   position: absolute;
@@ -76,7 +92,23 @@
   height: 244px;
   top: 90px;
   left: 459px;
-  background: url('bPersonage1/ePersonage1.png') no-repeat -459px -90px transparent;
+  background-repeat: no-repeat;
+  background-position: -459px -90px;
+}
+.webp .pL2Ertheia_bPersonage1__eHeadPersonage {
+  background-image: url('bPersonage1/ePersonage1.webp');
+}
+.jp2 .pL2Ertheia_bPersonage1__eHeadPersonage {
+  background-image: url('bPersonage1/ePersonage1.jp2');
+}
+.jpx .pL2Ertheia_bPersonage1__eHeadPersonage {
+  background-image: url('bPersonage1/ePersonage1.wdp');
+}
+.svg .pL2Ertheia_bPersonage1__eHeadPersonage {
+  background-image: url('bPersonage1/ePersonage1.svg');
+}
+.png .pL2Ertheia_bPersonage1__eHeadPersonage {
+  background-image: url('bPersonage1/ePersonage1.optim.png');
 }
 .pL2Ertheia_bPersonage1__eHeadHair {
   position: absolute;
@@ -177,10 +209,26 @@
   left: 267px;
   width: 737px;
   height: 900px;
-  background: url('bPersonage2/ePersonage2.png') no-repeat center top transparent;
+  background-repeat: no-repeat;
+  background-position: center top;
   opacity: 0;
   -webkit-transition: opacity 0.3s;
   transition: opacity 0.3s;
+}
+.webp .pL2Ertheia_bPersonage2 {
+  background-image: url('bPersonage2/ePersonage2.webp');
+}
+.jp2 .pL2Ertheia_bPersonage2 {
+  background-image: url('bPersonage2/ePersonage2.jp2');
+}
+.jpx .pL2Ertheia_bPersonage2 {
+  background-image: url('bPersonage2/ePersonage2.wdp');
+}
+.svg .pL2Ertheia_bPersonage2 {
+  background-image: url('bPersonage2/ePersonage2.svg');
+}
+.png .pL2Ertheia_bPersonage2 {
+  background-image: url('bPersonage2/ePersonage2.optim.png');
 }
 .pL2Ertheia_bPersonage2__eHeadPersonage {
   position: absolute;
@@ -189,8 +237,24 @@
   left: 129px;
   width: 355px;
   height: 299px;
-  background: url('bPersonage2/ePersonage2.png') no-repeat -129px 10px transparent;
+  background-repeat: no-repeat;
+  background-position: -129px 10px;
   pointer-events: all;
+}
+.webp .pL2Ertheia_bPersonage2__eHeadPersonage {
+  background-image: url('bPersonage2/ePersonage2.webp');
+}
+.jp2 .pL2Ertheia_bPersonage2__eHeadPersonage {
+  background-image: url('bPersonage2/ePersonage2.jp2');
+}
+.jpx .pL2Ertheia_bPersonage2__eHeadPersonage {
+  background-image: url('bPersonage2/ePersonage2.wdp');
+}
+.svg .pL2Ertheia_bPersonage2__eHeadPersonage {
+  background-image: url('bPersonage2/ePersonage2.svg');
+}
+.png .pL2Ertheia_bPersonage2__eHeadPersonage {
+  background-image: url('bPersonage2/ePersonage2.optim.png');
 }
 .pL2Ertheia_bPersonages_mHoverEffect .pL2Ertheia_bPersonage2 {
   opacity: 1;
@@ -417,10 +481,25 @@
   left: -158px;
   width: 1475px;
   height: 1106px;
-  background: url('bAlchemyAction/eAlchemy__hover.png') no-repeat transparent;
+  background-repeat: no-repeat;
   opacity: 0;
   -webkit-transition: opacity 0.6s linear;
   transition: opacity 0.6s linear;
+}
+.webp .pL2Ertheia_bAlchemyAction {
+  background-image: url('bAlchemyAction/eAlchemy__hover.webp');
+}
+.jp2 .pL2Ertheia_bAlchemyAction {
+  background-image: url('bAlchemyAction/eAlchemy__hover.jp2');
+}
+.jpx .pL2Ertheia_bAlchemyAction {
+  background-image: url('bAlchemyAction/eAlchemy__hover.wdp');
+}
+.svg .pL2Ertheia_bAlchemyAction {
+  background-image: url('bAlchemyAction/eAlchemy__hover.svg');
+}
+.png .pL2Ertheia_bAlchemyAction {
+  background-image: url('bAlchemyAction/eAlchemy__hover.png');
 }
 .pL2Ertheia_bAlchemyAction_mStart {
   opacity: 1;

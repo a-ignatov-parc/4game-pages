@@ -6,8 +6,23 @@
 		left: -158px;
 		width: 1475px;
 		height: 1106px;
-	
-		background: url('bAlchemyAction/eAlchemy__hover.png') no-repeat transparent;
+
+		background-repeat: no-repeat;
+		.webp & {
+			background-image: url('bAlchemyAction/eAlchemy__hover.webp');
+		}
+		.jp2 & {
+			background-image: url('bAlchemyAction/eAlchemy__hover.jp2');
+		}
+		.jpx & {
+			background-image: url('bAlchemyAction/eAlchemy__hover.wdp');
+		}
+		.svg & {
+			background-image: url('bAlchemyAction/eAlchemy__hover.svg');
+		}
+		.png & {
+			background-image: url('bAlchemyAction/eAlchemy__hover.png');
+		} 
 		opacity: 0;
 	
 		-webkit-transition: opacity 0.6s linear;

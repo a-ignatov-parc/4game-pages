@@ -8,6 +8,7 @@
 
         <link href="/b/l2-ertheia.css" rel="stylesheet" type="text/css">
 
+        <script src="/js/imgsupport.js"></script>
         <script src="/js/jquery-1.10.2.min.js"></script>
         <script src="/js/preload.js"></script>
         <script src="/js/common.js"></script>

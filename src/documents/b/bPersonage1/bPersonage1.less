@@ -6,7 +6,23 @@
 		top: 86px;
 		left: 12px;
 
-		background: url('bPersonage1/ePersonage1.png') no-repeat center top transparent;
+		background-repeat: no-repeat;
+		background-position: center top;
+		.webp & {
+			background-image: url('bPersonage1/ePersonage1.webp');
+		}
+		.jp2 & {
+			background-image: url('bPersonage1/ePersonage1.jp2');
+		}
+		.jpx & {
+			background-image: url('bPersonage1/ePersonage1.wdp');
+		}
+		.svg & {
+			background-image: url('bPersonage1/ePersonage1.svg');
+		}
+		.png & {
+			background-image: url('bPersonage1/ePersonage1.optim.png');
+		} 
 
 		-webkit-transition: opacity 0.3s 0.1s;
 		transition: opacity 0.3s 0.1s;
@@ -19,7 +35,23 @@
 			top: 90px;
 			left: 459px;
 
-			background: url('bPersonage1/ePersonage1.png') no-repeat -459px -90px transparent;
+			background-repeat: no-repeat;
+			background-position: -459px -90px;
+			.webp & {
+				background-image: url('bPersonage1/ePersonage1.webp');
+			}
+			.jp2 & {
+				background-image: url('bPersonage1/ePersonage1.jp2');
+			}
+			.jpx & {
+				background-image: url('bPersonage1/ePersonage1.wdp');
+			}
+			.svg & {
+				background-image: url('bPersonage1/ePersonage1.svg');
+			}
+			.png & {
+				background-image: url('bPersonage1/ePersonage1.optim.png');
+			}
 		}
 		&__eHeadHair {
 			position: absolute;
