@@ -1,12 +1,12 @@
 @import url('http://fonts.googleapis.com/css?family=Philosopher:400,700&subset=cyrillic,latin');
 .pL2Ertheia_bMainContent {
   position: relative;
-  left: -7px;
-  width: 1200px;
+  max-width: 1200px;
   height: 924px;
   margin: 0 auto;
+  overflow: hidden;
   font-family: 'Philosopher', sans-serif;
-  background: url('bMainContent/bgShinePlanet.jpg') no-repeat 50% -287px #311214;
+  background: url('bMainContent/bgShinePlanet.jpg') no-repeat 50% -287px #062439;
   background-size: 1241px 987px;
   -webkit-transition: background-size 0.6s linear, background-position 0.6s linear;
   transition: background-size 0.6s linear, background-position 0.6s linear;
@@ -65,9 +65,25 @@
   height: 900px;
   top: 86px;
   left: 12px;
-  background: url('bPersonage1/ePersonage1.png') no-repeat center top transparent;
+  background-repeat: no-repeat;
+  background-position: center top;
   -webkit-transition: opacity 0.3s 0.1s;
   transition: opacity 0.3s 0.1s;
+}
+.webp .pL2Ertheia_bPersonage1 {
+  background-image: url('bPersonage1/ePersonage1.webp');
+}
+.jp2 .pL2Ertheia_bPersonage1 {
+  background-image: url('bPersonage1/ePersonage1.jp2');
+}
+.jpx .pL2Ertheia_bPersonage1 {
+  background-image: url('bPersonage1/ePersonage1.wdp');
+}
+.svg .pL2Ertheia_bPersonage1 {
+  background-image: url('bPersonage1/ePersonage1.svg');
+}
+.png .pL2Ertheia_bPersonage1 {
+  background-image: url('bPersonage1/ePersonage1.optim.png');
 }
 .pL2Ertheia_bPersonage1__eHeadPersonage {
   position: absolute;
@@ -76,7 +92,23 @@
   height: 244px;
   top: 90px;
   left: 459px;
-  background: url('bPersonage1/ePersonage1.png') no-repeat -459px -90px transparent;
+  background-repeat: no-repeat;
+  background-position: -459px -90px;
+}
+.webp .pL2Ertheia_bPersonage1__eHeadPersonage {
+  background-image: url('bPersonage1/ePersonage1.webp');
+}
+.jp2 .pL2Ertheia_bPersonage1__eHeadPersonage {
+  background-image: url('bPersonage1/ePersonage1.jp2');
+}
+.jpx .pL2Ertheia_bPersonage1__eHeadPersonage {
+  background-image: url('bPersonage1/ePersonage1.wdp');
+}
+.svg .pL2Ertheia_bPersonage1__eHeadPersonage {
+  background-image: url('bPersonage1/ePersonage1.svg');
+}
+.png .pL2Ertheia_bPersonage1__eHeadPersonage {
+  background-image: url('bPersonage1/ePersonage1.optim.png');
 }
 .pL2Ertheia_bPersonage1__eHeadHair {
   position: absolute;
@@ -177,10 +209,26 @@
   left: 267px;
   width: 737px;
   height: 900px;
-  background: url('bPersonage2/ePersonage2.png') no-repeat center top transparent;
+  background-repeat: no-repeat;
+  background-position: center top;
   opacity: 0;
   -webkit-transition: opacity 0.3s;
   transition: opacity 0.3s;
+}
+.webp .pL2Ertheia_bPersonage2 {
+  background-image: url('bPersonage2/ePersonage2.webp');
+}
+.jp2 .pL2Ertheia_bPersonage2 {
+  background-image: url('bPersonage2/ePersonage2.jp2');
+}
+.jpx .pL2Ertheia_bPersonage2 {
+  background-image: url('bPersonage2/ePersonage2.wdp');
+}
+.svg .pL2Ertheia_bPersonage2 {
+  background-image: url('bPersonage2/ePersonage2.svg');
+}
+.png .pL2Ertheia_bPersonage2 {
+  background-image: url('bPersonage2/ePersonage2.optim.png');
 }
 .pL2Ertheia_bPersonage2__eHeadPersonage {
   position: absolute;
@@ -189,8 +237,24 @@
   left: 129px;
   width: 355px;
   height: 299px;
-  background: url('bPersonage2/ePersonage2.png') no-repeat -129px 10px transparent;
+  background-repeat: no-repeat;
+  background-position: -129px 10px;
   pointer-events: all;
+}
+.webp .pL2Ertheia_bPersonage2__eHeadPersonage {
+  background-image: url('bPersonage2/ePersonage2.webp');
+}
+.jp2 .pL2Ertheia_bPersonage2__eHeadPersonage {
+  background-image: url('bPersonage2/ePersonage2.jp2');
+}
+.jpx .pL2Ertheia_bPersonage2__eHeadPersonage {
+  background-image: url('bPersonage2/ePersonage2.wdp');
+}
+.svg .pL2Ertheia_bPersonage2__eHeadPersonage {
+  background-image: url('bPersonage2/ePersonage2.svg');
+}
+.png .pL2Ertheia_bPersonage2__eHeadPersonage {
+  background-image: url('bPersonage2/ePersonage2.optim.png');
 }
 .pL2Ertheia_bPersonages_mHoverEffect .pL2Ertheia_bPersonage2 {
   opacity: 1;
@@ -417,10 +481,25 @@
   left: -158px;
   width: 1475px;
   height: 1106px;
-  background: url('bAlchemyAction/eAlchemy__hover.png') no-repeat transparent;
+  background-repeat: no-repeat;
   opacity: 0;
   -webkit-transition: opacity 0.6s linear;
   transition: opacity 0.6s linear;
+}
+.webp .pL2Ertheia_bAlchemyAction {
+  background-image: url('bAlchemyAction/eAlchemy__hover.webp');
+}
+.jp2 .pL2Ertheia_bAlchemyAction {
+  background-image: url('bAlchemyAction/eAlchemy__hover.jp2');
+}
+.jpx .pL2Ertheia_bAlchemyAction {
+  background-image: url('bAlchemyAction/eAlchemy__hover.wdp');
+}
+.svg .pL2Ertheia_bAlchemyAction {
+  background-image: url('bAlchemyAction/eAlchemy__hover.svg');
+}
+.png .pL2Ertheia_bAlchemyAction {
+  background-image: url('bAlchemyAction/eAlchemy__hover.png');
 }
 .pL2Ertheia_bAlchemyAction_mStart {
   opacity: 1;
@@ -1125,4 +1204,576 @@
   -ms-filter: grayscale(0%);
   -o-filter: grayscale(0%);
   filter: grayscale(0%);
+}
+.bPatchnotePage {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+  z-index: 105;
+  font-family: 'PT Sans', sans-serif;
+  background: #ebeff1;
+  overflow: hidden;
+}
+/* ----------------------- [ Menu ]
+  */
+.bPatchnoteMenuContainer {
+  width: 240px;
+  height: 100%;
+  float: left;
+  font-size: 18px;
+}
+.bPatchnoteMenuContainer .bPatchnote__menuTitle {
+  padding: 22px 0 6px 31px;
+  margin: 0;
+  color: black;
+  font-size: 18px;
+}
+.bPatchnoteMenuContainer .bPatchnote__menuDate {
+  display: block;
+  opacity: 0.5;
+  font-size: 11px;
+}
+.bPatchnoteMenuContainer .bPatchnote__menuItems {
+  margin: 0;
+  padding: 0;
+  background: #f5f7f8;
+  list-style: none;
+}
+.bPatchnoteMenuContainer .bPatchnote__menuItem {
+  margin: 0;
+  padding: 0;
+  line-height: 39px;
+  border-bottom: 1px solid #d7dfe4;
+  text-indent: 32px;
+  list-style: none;
+}
+.bPatchnoteMenuContainer .bPatchnote__menuItem a {
+  color: inherit;
+  text-decoration: none;
+}
+.bPatchnoteMenuContainer .bPatchnote__menuItem_active {
+  height: auto;
+  zpadding-bottom: 13px;
+  background: #ffcc00;
+}
+.bPatchnoteMenuContainer .bPatchnote__menuItem:not(.active):hover {
+  background: #dfe3e5;
+  cursor: pointer;
+}
+.bPatchnoteMenuContainer .bPatchnote__menuItem ul {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+}
+.bPatchnoteMenuContainer .bPatchnote__menuItem ul li {
+  height: 24px;
+  line-height: 24px;
+  padding: 0;
+  margin: 4px 0 8px 0;
+  text-indent: 48px;
+}
+.bPatchnoteMenuContainer .bPatchnote__menuItem ul li.active {
+  background: #ffcc00;
+}
+.bPatchnoteMenuContainer .bPatchnote__menuItem ul li:last-child {
+  margin-bottom: 4px;
+}
+.bPatchnoteMenuContainer .bPatchnote__menuItem ul li:not(.active):hover {
+  background: #e9eaeb;
+  cursor: pointer;
+}
+/* ----------------------- [ Content ]
+  */
+.bPatchnoteContent {
+  max-width: 960px;
+  margin-left: 240px;
+  padding-bottom: 50px;
+  padding-top: 1px;
+  font-size: 18px;
+  background: #fff;
+}
+.bPatchnoteContent h1 {
+  margin: 70px 90px 20px;
+  font: 70px/70px 'PT Sans', sans-serif;
+  text-align: center;
+}
+.bPatchnoteContent h2 {
+  font: bold 30px/32px 'PT Sans', sans-serif;
+  margin: 35px 100px 20px;
+}
+.bPatchnoteContent p {
+  margin: 16px 100px;
+}
+.bPatchnoteContent p > img {
+  display: block;
+  margin: 0 auto;
+}
+.bPatchnoteContent hr {
+  background: none;
+  border: none;
+  margin: 0;
+}
+.bPatchnoteContent ul {
+  list-style: none;
+  margin: 20px 100px 50px;
+  padding: 0;
+}
+.bPatchnoteContent ul li {
+  position: relative;
+  margin: 0 0 12px 0;
+}
+.bPatchnoteContent ul li:before {
+  position: absolute;
+  left: -1.3em;
+  top: 0;
+  content: '—';
+}
+.bPatchnoteContent ul li p {
+  margin: 0;
+}
+.bPatchnoteContent ul li ul {
+  margin: 8px 0 22px 30px;
+}
+.bPatchnoteContent ol {
+  margin: 20px 100px 50px;
+  padding: 0;
+}
+.bPatchnoteContent ol li {
+  font: 18px/28px Arial, sans-serif;
+  margin: 0 0 16px 0;
+}
+.bPatchnoteContent ol li p {
+  margin: 0;
+}
+.bPatchnoteContent ol li ul {
+  margin: 8px 0 22px 30px;
+}
+.bPatchnoteContent ol li .bPatchnote__eListItemName {
+  text-indent: 0px;
+  display: inline-block;
+  width: 700px;
+  vertical-align: top;
+  padding-left: 12px;
+  line-height: 28px;
+  margin-bottom: 20px;
+  position: relative;
+  top: -3px;
+  letter-spacing: -0.01em;
+}
+.bPatchnoteContent ol li > section {
+  text-indent: 0;
+}
+.bPatchnoteContent ol li > section h2 {
+  font-size: 30px;
+  text-align: center;
+  letter-spacing: 0;
+  font-family: 'PT Sans', sans-serif;
+}
+.bPatchnoteContent blockquote {
+  margin: 0 0 60px;
+  padding: 36px 100px;
+  background: #f6f4f4;
+  /* таблицы и заголовки обрамляются в цитатах, чтобы сделать серый фон вокруг них */
+}
+.bPatchnoteContent blockquote h2 {
+  margin: 0;
+  padding: 0 0 20px;
+  text-align: center;
+}
+.bPatchnoteContent blockquote p {
+  margin: 16px 0 24px 0;
+  font: italic 14px/24px Arial, sans-serif;
+  text-align: center;
+  color: #9d9b9b;
+}
+.bPatchnoteContent blockquote table {
+  position: relative;
+  left: -20px;
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+.bPatchnoteContent blockquote table tbody > tr:hover > td {
+  background: #eeebeb;
+}
+.bPatchnoteContent blockquote table th {
+  padding: 0 10px 0 20px;
+  font: bold 14px/24px Arial, sans-serif;
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 1px solid #dddbdb;
+}
+.bPatchnoteContent blockquote table td {
+  padding: 8px 10px 9px 20px;
+  font: 14px/24px Arial, sans-serif;
+  text-align: left;
+  vertical-align: top;
+}
+.bPatchnoteContent blockquote blockquote {
+  padding: 0;
+  margin: 0;
+}
+.bPatchnoteContent blockquote blockquote table {
+  width: 50%;
+  float: left;
+}
+.bPatchnoteContent blockquote blockquote:after {
+  display: block;
+  height: 2px;
+  content: ' ';
+  clear: left;
+}
+.bPatchnoteContent blockquote ul {
+  margin: 0 0 22px 30px;
+}
+.bPatchnoteContent ol + blockquote,
+.bPatchnoteContent ul + blockquote {
+  margin-top: -20px;
+}
+.bPatchnoteContent h1 + blockquote {
+  /* обычный параграф в цитате – это lead-текст под заголовком */
+  background: transparent;
+  padding: 0;
+  margin: 0;
+}
+.bPatchnoteContent h1 + blockquote p {
+  margin: 20px 90px 80px;
+  font: italic 18px/28px Georgia, sans-serif;
+  text-align: center;
+  color: #000;
+}
+.bPatchnoteContent .bStandartTypeList {
+  list-style: none;
+  margin-left: 134px;
+  letter-spacing: -0.01em;
+  width: 640px;
+  margin-bottom: 30px;
+}
+.bPatchnoteContent .bStandartTypeList li {
+  list-style: none;
+  position: relative;
+  line-height: 28px;
+  text-indent: 0;
+  letter-spacing: 0;
+  margin-bottom: 8px;
+}
+.bPatchnoteContent .bStandartTypeList li:before {
+  content: '—';
+  position: absolute;
+  left: -23px;
+}
+.bPatchnoteContent .bPatchnote__eContentIcons {
+  width: 32px;
+  height: 32px;
+  background: #ffc000;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  vertical-align: middle;
+  display: inline-block;
+  position: relative;
+  margin-right: 8px;
+}
+.bPatchnoteContent .bPatchnote__eContentIcons + span {
+  display: inline-block;
+  width: 160px;
+  vertical-align: middle;
+}
+.bPatchnoteContent .bPatchnote__eBigImg {
+  width: 766px;
+  height: 480px;
+  border-radius: 5px;
+  background: #ffc000;
+  margin-left: 96px;
+}
+.bPatchnoteContent .bWithVoting {
+  margin-top: -16px;
+  margin-bottom: 58px;
+}
+.bPatchnoteContent .bWithVoting .bPatchnote__eListItemName {
+  width: 680px;
+}
+.bPatchnoteContent .bWithVoting li {
+  margin-left: 48px;
+  text-indent: 13px;
+  padding: 10px 0;
+  width: 866px;
+  position: relative;
+}
+.bPatchnoteContent .bWithVoting li span {
+  padding-left: 4px;
+  margin: 0;
+}
+.bPatchnoteContent .bWithVoting li:nth-child(1),
+.bPatchnoteContent .bWithVoting li:nth-child(2),
+.bPatchnoteContent .bWithVoting li:nth-child(3),
+.bPatchnoteContent .bWithVoting li:nth-child(4),
+.bPatchnoteContent .bWithVoting li:nth-child(5),
+.bPatchnoteContent .bWithVoting li:nth-child(6),
+.bPatchnoteContent .bWithVoting li:nth-child(7),
+.bPatchnoteContent .bWithVoting li:nth-child(8),
+.bPatchnoteContent .bWithVoting li:nth-child(9) {
+  text-indent: 23px;
+}
+.bPatchnoteContent .bWithVoting li:hover {
+  background: #f6f5f5;
+}
+.bPatchnoteContent .bWithVoting li .bLikes {
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  font-size: 0;
+  margin-top: -12px;
+}
+.bPatchnoteContent .bWithVoting li .bLikes button {
+  background: none;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  border: 1px solid #333333;
+  width: 33px;
+  height: 24px;
+  position: relative;
+  cursor: pointer;
+  opacity: 0.6;
+}
+.bPatchnoteContent .bWithVoting li .bLikes button:before {
+  content: '';
+  width: 12px;
+  height: 14px;
+  position: absolute;
+  background: url(../img/likes.png) no-repeat;
+  top: 50%;
+  left: 50%;
+  margin: -7px 0 0 -6px;
+}
+.bPatchnoteContent .bWithVoting li .bLikes button.plus {
+  margin-right: -1px;
+  border-radius: 3px 0 0 3px;
+}
+.bPatchnoteContent .bWithVoting li .bLikes button.plus:not(.active):hover {
+  opacity: 1;
+  border-radius: 3px;
+}
+.bPatchnoteContent .bWithVoting li .bLikes button.minus {
+  border-radius: 0 3px 3px 0;
+}
+.bPatchnoteContent .bWithVoting li .bLikes button.minus:before {
+  background-position: top right;
+}
+.bPatchnoteContent .bWithVoting li .bLikes button.minus:not(.active):hover {
+  opacity: 1;
+  border-radius: 3px;
+}
+.bPatchnoteContent .bWithVoting li .bLikes button.active {
+  background: #333333;
+}
+.bPatchnoteContent .bWithVoting li .bLikes button span {
+  padding: 0;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: -17px;
+  left: 0;
+  text-indent: -3px;
+  font-size: 11px;
+  color: #878787;
+  opacity: 0.5;
+}
+.bPatchnoteContent .bPatchnoteGrayBlock {
+  background: #f6f4f4;
+  padding: 0 0 27px 0;
+  margin: 0 0 55px 0;
+}
+.bPatchnoteContent .bPatchnoteGrayBlock h2 {
+  padding: 35px 0 25px 0;
+  font-size: 30px;
+  text-align: center;
+  letter-spacing: 0;
+  font-family: 'PT Sans', sans-serif;
+}
+.bPatchnoteContent .bPatchnoteGrayBlock .bTablePatchnote {
+  font-size: 14px;
+  padding: 0;
+  margin: 0;
+  border-spacing: 0;
+  width: 100%;
+}
+.bPatchnoteContent .bPatchnoteGrayBlock .bTablePatchnote article {
+  font-weight: bold;
+  letter-spacing: -0.02em;
+  overflow: hidden;
+  margin-bottom: 12px;
+}
+.bPatchnoteContent .bPatchnoteGrayBlock .bTablePatchnote article > div {
+  padding-bottom: 5px;
+  float: left;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.bPatchnoteContent .bPatchnoteGrayBlock .bTablePatchnote section {
+  margin-bottom: 14px;
+}
+.bPatchnoteContent .bPatchnoteGrayBlock .bTablePatchnote section .bTableRow {
+  overflow: hidden;
+  letter-spacing: -0.014em;
+  padding: 14px 0 11px 0;
+}
+.bPatchnoteContent .bPatchnoteGrayBlock .bTablePatchnote section .bTableRow > div {
+  min-height: 1px;
+  float: left;
+}
+.bPatchnoteContent .bPatchnoteGrayBlock .bTablePatchnote section .bTableRow > div:nth-child(1) {
+  font-weight: bold;
+  width: 241px;
+  margin-left: 55px;
+}
+.bPatchnoteContent .bPatchnoteGrayBlock .bTablePatchnote section .bTableRow > div:nth-child(2) {
+  width: 239px;
+  position: relative;
+  top: -7px;
+}
+.bPatchnoteContent .bPatchnoteGrayBlock .bTablePatchnote section .bTableRow > div:nth-child(3) {
+  width: 370px;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: -0.007em;
+}
+.bPatchnoteContent .bPatchnoteGrayBlock .bTablePatchnote section:hover {
+  background: #eeebeb;
+}
+.bPatchnoteContent .bPatchnoteGrayBlock .bTable__m3col article > div:nth-child(1) {
+  width: 240px;
+  margin-left: 54px;
+}
+.bPatchnoteContent .bPatchnoteGrayBlock .bTable__m3col article > div:nth-child(2) {
+  width: 241px;
+}
+.bPatchnoteContent .bPatchnoteGrayBlock .bTable__m3col article > div:nth-child(3) {
+  width: 266px;
+}
+.bPatchnoteContent .bPatchnoteGrayBlock .bTable__m3col > section .bTableRow > div:nth-child(1) {
+  font-weight: bold;
+  width: 241px;
+  margin-left: 55px;
+}
+.bPatchnoteContent .bPatchnoteGrayBlock .bTable__m3col > section .bTableRow > div:nth-child(2) {
+  width: 239px;
+  position: relative;
+  top: -7px;
+}
+.bPatchnoteContent .bPatchnoteGrayBlock .bTable__m3col > section .bTableRow > div:nth-child(3) {
+  width: 370px;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: -0.007em;
+}
+.bPatchnoteContent .bPatchnoteGrayBlock .bTable__m2col article {
+  margin-bottom: 0;
+}
+.bPatchnoteContent .bPatchnoteGrayBlock .bTable__m2col article > div {
+  padding: 35px 0 13px 0;
+}
+.bPatchnoteContent .bPatchnoteGrayBlock .bTable__m2col article > div:nth-child(1) {
+  margin-left: 175px;
+  width: 321px;
+}
+.bPatchnoteContent .bPatchnoteGrayBlock .bTable__m2col article > div:nth-child(2) {
+  width: 254px;
+}
+.bPatchnoteContent .bPatchnoteGrayBlock .bTable__m2col > section .bTableRow {
+  padding: 9px 0 11px 0;
+  line-height: 20px;
+}
+.bPatchnoteContent .bPatchnoteGrayBlock .bTable__m2col > section .bTableRow > div:nth-child(1) {
+  font-weight: normal;
+  width: 280px;
+  margin-left: 176px;
+}
+.bPatchnoteContent .bPatchnoteGrayBlock .bTable__m2col > section .bTableRow > div:nth-child(2) {
+  width: 239px;
+  margin-left: 40px;
+  top: 0;
+}
+.bPatchnoteContent .bPatchnoteGrayBlock .bTable__m2col > section .bTableRow.bTitleLine > div {
+  font-weight: bold;
+}
+.bPatchnoteContent .bPatchnoteGrayBlock .bTable__m2col > section .bTableRow:not(.bTitleLine):hover {
+  background: #eeebeb;
+}
+.bPatchnoteContent .bPatchnoteGrayBlock .bTable__m2col > section:hover {
+  background-color: transparent;
+}
+.bPatchnoteContent .bPatchnoteText2Col {
+  margin-bottom: 104px;
+  overflow: hidden;
+  line-height: 28px;
+}
+.bPatchnoteContent .bPatchnoteText2Col > div {
+  float: left;
+  width: 360px;
+  margin-left: 40px;
+}
+.bPatchnoteContent .bPatchnoteText2Col > div:first-child {
+  margin-left: 96px;
+}
+.bPatchnoteContent .bPatchnoteText2Col > div h4 {
+  font-size: 18px;
+  margin-bottom: 9px;
+}
+.bPatchnoteContent .bPatchnoteText2Col > div h4 span {
+  width: 300px;
+}
+.bPatchnoteContent .bPatchnoteText2Col > div p {
+  padding: 0;
+  margin: 0 0 40px 0;
+}
+.bPatchnoteContent .bDoubleTable {
+  overflow: hidden;
+}
+.bPatchnoteContent .bDoubleTable .bTablePatchnote {
+  width: 384px;
+  float: left;
+  margin-left: 80px;
+}
+.bPatchnoteContent .bDoubleTable .bTablePatchnote:last-child {
+  margin-left: 24px;
+}
+.bPatchnoteContent .bDoubleTable .bTablePatchnote article {
+  margin-bottom: 5px;
+}
+.bPatchnoteContent .bDoubleTable .bTablePatchnote article div {
+  letter-spacing: 0;
+}
+.bPatchnoteContent .bDoubleTable .bTablePatchnote article div:nth-child(1) {
+  width: 140px;
+  margin: 0;
+  text-indent: 14px;
+}
+.bPatchnoteContent .bDoubleTable .bTablePatchnote article div:nth-child(2) {
+  padding-left: 28px;
+  width: 216px;
+}
+.bPatchnoteContent .bDoubleTable .bTablePatchnote section .bTableRow {
+  padding: 11px 0;
+}
+.bPatchnoteContent .bDoubleTable .bTablePatchnote section .bTableRow div {
+  letter-spacing: 0;
+}
+.bPatchnoteContent .bDoubleTable .bTablePatchnote section .bTableRow div:nth-child(1) {
+  font-weight: normal;
+  width: 140px;
+  margin-left: 0;
+  text-indent: 14px;
+}
+.bPatchnoteContent .bDoubleTable .bTablePatchnote section .bTableRow div:nth-child(2) {
+  padding-left: 28px;
+  top: 0;
+  width: 216px;
+}
+.bPatchnoteContent .bDoubleTable .bTablePatchnote section .bTableRow:hover {
+  background: #eeebeb;
+}
+.bPatchnoteContent .bDoubleTable .bTablePatchnote section:hover {
+  background-color: transparent;
 }
