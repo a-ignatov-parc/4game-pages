@@ -1,0 +1,319 @@
+html{
+	height:100%;
+	min-height:100%;
+}
+body{
+	font-size: 14px;
+	font-family: Aria, sans-serif;
+	padding:0px;
+	margin:0px;
+	height: 100%;
+	min-height: 100%;
+	color:#000;
+	min-width:960px;
+	background:url(bg0.jpg) repeat-x;
+	background-color:#28394d;
+}
+
+
+a{
+	color:#0060b2;
+}
+a:hover{
+	text-decoration:none;
+}
+
+.pDP_pos_rel{
+	position:relative;
+}
+
+.pDP_GlobalLayout{
+	min-width:960px;
+	min-height:100%;
+	background:url(bg.jpg) no-repeat 50% 0px;
+}
+
+.pDP_wr{
+	overflow:hidden;
+}
+
+.pDP_gragons_wraper{
+	width:1px;
+	margin:0px auto;
+}
+
+/*@-webkit-keyframes moving1{
+	from{
+		-webkit-transform: rotateZ(90deg) translate(-900px,0px);
+	}
+	to{
+		-webkit-transform: rotateZ(0deg) translate(0px,0px);
+	}
+}
+
+@keyframes moving1{
+	from{
+		-moz-transform: rotateZ(90deg) translate(-900px,0px);
+		-ms-transform: rotateZ(90deg) translate(-900px,0px);
+		transform: rotateZ(90deg) translate(-900px,0px);
+	}
+	to{
+		-moz-transform: rotateZ(0deg) translate(0px,0px);
+		-ms-transform: rotateZ(0deg) translate(0px,0px);
+		transform: rotateZ(0deg) translate(0px,0px);
+	}
+}*/
+
+.pDP_dragon1{
+	position:absolute;
+	left:-699px;
+	width:624px;
+	height:840px;
+	background:url(dragon1.png) no-repeat 0px 0px;
+
+/*	-webkit-animation-name: moving1;
+    -webkit-animation-timing-function: ease-in-out;*/
+/*    -webkit-animation-iteration-count: infinite;*/
+/*    -webkit-animation-duration: 4s;
+
+	-moz-animation-name: moving1;
+    -moz-animation-timing-function: ease-in-out;
+    -moz-animation-duration: 4s;
+
+	-ms-animation-name: moving1;
+    -ms-animation-timing-function: ease-in-out;
+    -ms-animation-duration: 4s;
+
+	animation-name: moving1;
+    animation-timing-function: ease-in-out;
+    animation-duration: 4s;*/
+}
+
+
+/*@-webkit-keyframes moving2{
+	from{
+		-webkit-transform: translate(1000px,400px);
+	}
+	to{
+		-webkit-transform: translate(0px,0px);
+	}
+}
+
+@keyframes moving2{
+	from{
+		-moz-transform: translate(1000px,400px);
+		-ms-transform: translate(1000px,400px);
+		transform: translate(1000px,400px);
+	}
+	to{
+		-moz-transform: translate(0px,0px);
+		-ms-transform: translate(0px,0px);
+		transform: rotateZ(0deg) translate(0px,0px);
+	}
+}*/
+
+
+.pDP_dragon2{
+	position:absolute;
+	left:12px;
+	top:238px;
+	width:884px;
+	height:454px;
+	background:url(dragon2.png) no-repeat 0px 0px;
+
+	-webkit-animation-name: moving2;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-duration: 6s;
+
+	-moz-animation-name: moving2;
+    -moz-animation-timing-function: ease-in-out;
+    -moz-animation-duration: 6s;
+
+	-ms-animation-name: moving2;
+    -ms-animation-timing-function: ease-in-out;
+    -ms-animation-duration: 6s;
+
+	animation-name: moving2;
+    animation-timing-function: ease-in-out;
+    animation-duration: 6s;
+}
+
+.pDP_flame{
+	position:absolute;
+	left:-451px;
+	top:249px;
+	width:901px;
+	height:518px;
+	background:url(flame.png) no-repeat 50% 0px;
+
+}
+
+.pDP_loader_logo{
+	width:359px;
+	height:0px;
+	position:relative;
+	margin:0px auto;
+	z-index:10;
+}
+
+	@-webkit-keyframes pulse { 
+		/*0% { -webkit-transform: scale(0.7); } 
+		50% { -webkit-transform: scale(1.1); } 
+		100% { -webkit-transform: scale(1); } */
+		0% { opacity: 0; } 
+		50% { opacity: 1; } 
+		100% { opacity: 0; }
+	} 
+	@keyframes pulse { 
+		/*0% { transform: scale(0.7); } 
+		50% { transform: scale(1.1); } 
+		100% { transform: scale(1); } */
+		0% { opacity: 0; } 
+		50% { opacity: 1; } 
+		100% { opacity: 0; }
+	} 
+
+
+
+	.pDP_loader_logo .pDP_logoglow{
+		position:absolute;
+		width:359px;
+		height:188px;
+		-webkit-animation-name: pulse; 
+	    animation-name: pulse; 
+	}
+		.pDP_loader_logo .pDP_logoglow.pDPanimated { 
+			-webkit-animation-duration: 1.6s; 
+			animation-duration: 1.6s; 
+			-webkit-animation-fill-mode: both; 
+			animation-fill-mode: both; 
+			-webkit-animation-timing-function: ease-in-out; 
+			animation-timing-function: ease-in-out; 
+			animation-iteration-count:infinite; 
+			-webkit-animation-iteration-count:infinite; 
+		} 
+	.pDP_loader_logo .pDP_logoimg{
+		position:absolute;
+	}
+
+
+.pDP_logo{
+	width:359px;
+	position:relative;
+	margin:0px auto;
+	z-index:21;
+}
+	.pDP_logo .pDP_logoglow{
+		position:absolute;
+		z-index:21;
+		width:359px;
+		height:188px;
+		background:url(logo_glow.png);
+		opacity:0;
+	}
+	.pDP_logo .pDP_logoimg{
+		position:absolute;
+		z-index:21;
+	}
+.pDP_trailer_block{
+	width:640px;
+	height:360px;
+	background:url(trailer.png);
+	margin:50px auto 20px auto;
+}
+	.pDP_trailer_block .pDP_trailer{
+	}
+		.pDP_trailer_block .pDP_trailer.playing{
+			position:relative;
+			z-index:20;
+		}
+
+.pDP_getkey_block{
+	width:470px;
+	height:255px;
+	margin:0px auto;
+	text-align:center;
+	position:relative;
+	z-index:10;
+}
+	.pDP_getkey_block h1{
+		margin:0px;
+		color:#000;
+		font-size:36px;
+		font-family:georgia;
+		font-weight:normal;
+		line-height:1em;
+		text-align:center;
+		margin:0px 0px 20px 0px;
+	}
+	.pDP_getkey_block .pDP_getkey_step1 .pDP_note{
+		font-size:15px;
+		font-weight:bold;
+		margin:15px 0px 0px 0px;
+	}
+	.pDP_getkey_block .pDP_getkey_step3 .pDP_note{
+		font-size:15px;
+		font-weight:bold;
+		margin:0px 0px 10px 0px;
+	}
+	.pDP_getkey_block .pDP_getkey_step3 .pDP_vknote{
+		font-size:13px;
+	}
+	.pDP_getkey_block .pDP_getkey_step3 .dp_vk_news{
+		position:absolute;
+		left:140px;
+		opacity:0.5;
+	}
+		.pDP_getkey_block .pDP_getkey_step3 .dp_vk_news:hover{
+			opacity:1;
+		}
+	
+
+
+.pDP_features_block{
+	width:1000px;
+	margin:0px auto;
+}
+
+.pDP_features{
+	display:table;
+	width:100%;
+}
+	.pDP_features .pDPcell{
+		display:table-cell;
+		vertical-align:top;
+		padding:170px 20px 0px 20px;
+		width:25%;
+		color:#fff;
+	}
+	.pDP_features .pDPcell:first-child{
+		padding-left:0px;
+	}
+	.pDP_features .pDPcell:last-child{
+		padding-right:0px;
+	}
+		.pDP_features .pDPcell.pDP_nontarget{
+			background:url(feat1.png) no-repeat 50% 0px;
+		}
+		.pDP_features .pDPcell.pDP_dragons{
+			background:url(feat2.png) no-repeat 50% 72px;
+		}
+		.pDP_features .pDPcell.pDP_islands{
+			background:url(feat3.png) no-repeat 50% 57px;
+		}
+		.pDP_features .pDPcell.pDP_house{
+			background:url(feat4.png) no-repeat 50% 18px;
+		}
+		.pDP_features .pDPcell h2{
+			text-align:center;
+			font-family:Georgia;
+			font-size:17px;
+			margin:0px 0px 12px 0px;
+			text-transform:uppercase;
+			white-space:nowrap;
+			font-weight:normal;
+			line-height:1.4em;
+		}
+		.pDP_features .pDPcell .pDPtxt{
+			line-height:1.5em;
+		}
