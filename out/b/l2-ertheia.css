@@ -2,7 +2,6 @@
 .pL2Ertheia_bMainContent {
   position: relative;
   max-width: 1200px;
-  min-width: 960px;
   height: 924px;
   margin: 0 auto;
   overflow: hidden;
@@ -62,16 +61,14 @@
 }
 .pL2Ertheia_bPersonage1 {
   position: absolute;
-  /*width: 1090px;*/
+  width: 1090px;
   height: 900px;
   top: 86px;
-  /*left: 12px;*/
+  left: 12px;
   background-repeat: no-repeat;
   background-position: center top;
   -webkit-transition: opacity 0.3s 0.1s;
   transition: opacity 0.3s 0.1s;
-  width: 100%;
-  left: 0;
 }
 .webp .pL2Ertheia_bPersonage1 {
   background-image: url('bPersonage1/ePersonage1.webp');
@@ -94,11 +91,9 @@
   width: 234px;
   height: 244px;
   top: 90px;
-  /*left: 459px;*/
+  left: 459px;
   background-repeat: no-repeat;
   background-position: -459px -90px;
-  left: 50%;
-  margin-left: -86px;
 }
 .webp .pL2Ertheia_bPersonage1__eHeadPersonage {
   background-image: url('bPersonage1/ePersonage1.webp');
@@ -121,10 +116,8 @@
   width: 36px;
   height: 59px;
   top: 236px;
-  /*left: 639px;*/
+  left: 639px;
   background: url('bPersonage1/hair.png');
-  left: 50%;
-  margin-left: 94px;
 }
 .pL2Ertheia_bPersonage1__eEars {
   position: absolute;
@@ -135,18 +128,14 @@
   width: 94px;
   height: 85px;
   top: 172px;
-  /*left: 439px;*/
-  left: 50%;
-  margin-left: -106px;
+  left: 439px;
 }
 .pL2Ertheia_bPersonage1__eEars_mEarRight {
   width: 70px;
   height: 62px;
   top: 238px;
-  /*left: 649px;*/
+  left: 649px;
   background-position: -209px -65px;
-  left: 50%;
-  margin-left: 104px;
 }
 .pL2Ertheia_bPersonage1_mHoverEffect .pL2Ertheia_bPersonage1__eEars_mEarLeft {
   -webkit-animation: eEarLeft__Hover 1.2s;
@@ -217,16 +206,14 @@
 .pL2Ertheia_bPersonage2 {
   position: absolute;
   top: 179px;
-  /*left: 267px;*/
-  /*width: 737px;*/
+  left: 267px;
+  width: 737px;
   height: 900px;
   background-repeat: no-repeat;
-  background-position: 50% top;
+  background-position: center top;
   opacity: 0;
   -webkit-transition: opacity 0.3s;
   transition: opacity 0.3s;
-  left: 20%;
-  width: 80%;
 }
 .webp .pL2Ertheia_bPersonage2 {
   background-image: url('bPersonage2/ePersonage2.webp');
@@ -247,14 +234,12 @@
   position: absolute;
   z-index: 102;
   top: -10px;
-  /*left: 129px;*/
+  left: 129px;
   width: 355px;
   height: 299px;
   background-repeat: no-repeat;
   background-position: -129px 10px;
   pointer-events: all;
-  left:50%;
-  margin-left: -239px;
 }
 .webp .pL2Ertheia_bPersonage2__eHeadPersonage {
   background-image: url('bPersonage2/ePersonage2.webp');
@@ -282,12 +267,10 @@
   height: 680px;
   position: absolute;
   top: 150px;
-  /*left: 230px;*/
+  left: 230px;
   perspective: 2200px;
   display: none;
   z-index: 101;
-  left: 50%;
-  margin-left: -340px;
 }
 .pL2Ertheia_bPlanets__ePlanet {
   position: absolute;
