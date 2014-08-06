@@ -213,7 +213,7 @@
 							<span>Системные изменения</span>
 					<% else: %>
 						<li class="bPatchnote__menuItem">
-							<a href="/" data-reload-sections="pageView: #PatchnotesContent" data-reload-params='{ "dontScrollOnTransition": true }'>Системные изменения</a>
+							<a href="/" data-reload-sections="pageView: #PatchnotesContent" data-reload-params="{ &quot;dontScrollOnTransition&quot;: true }">Системные изменения</a>
 					<% end %>
 <!--
 						<ul>
@@ -232,7 +232,7 @@
 							<span>Классы</span>
 					<% else: %>
 						<li class="bPatchnote__menuItem">
-							<a href="/classes/" data-reload-sections="pageView: #PatchnotesContent" data-reload-params='{ "dontScrollOnTransition": true }'>Классы</a>
+							<a href="/classes/" data-reload-sections="pageView: #PatchnotesContent" data-reload-params="{ &quot;dontScrollOnTransition&quot;: true }">Классы</a>
 					<% end %>
 					</li>
 					<% if (@document.page == "zones"): %>
@@ -240,7 +240,7 @@
 							<span>Зоны охоты</span>
 					<% else: %>
 						<li class="bPatchnote__menuItem">
-							<a href="/zones/" data-reload-sections="pageView: #PatchnotesContent" data-reload-params='{ "dontScrollOnTransition": true }'>Зоны охоты</a>
+							<a href="/zones/" data-reload-sections="pageView: #PatchnotesContent" data-reload-params="{ &quot;dontScrollOnTransition&quot;: true }">Зоны охоты</a>
 					<% end %>
 					</li>
 					<% if (@document.page == "items"): %>
@@ -248,7 +248,7 @@
 							<span>Предметы</span>
 					<% else: %>
 						<li class="bPatchnote__menuItem">
-							<a href="/items/" data-reload-sections="pageView: #PatchnotesContent" data-reload-params='{ "dontScrollOnTransition": true }'>Предметы</a>
+							<a href="/items/" data-reload-sections="pageView: #PatchnotesContent" data-reload-params="{ &quot;dontScrollOnTransition&quot;: true }">Предметы</a>
 					<% end %>
 					</li>
 					<% if (@document.page == "quests"): %>
@@ -256,7 +256,7 @@
 							<span>Квесты</span>
 					<% else: %>
 						<li class="bPatchnote__menuItem">
-							<a href="/quests/" data-reload-sections="pageView: #PatchnotesContent" data-reload-params='{ "dontScrollOnTransition": true }'>Квесты</a>
+							<a href="/quests/" data-reload-sections="pageView: #PatchnotesContent" data-reload-params="{ &quot;dontScrollOnTransition&quot;: true }">Квесты</a>
 					<% end %>
 					</li>
 					<% if (@document.page == "other"): %>
@@ -264,7 +264,7 @@
 							<span>Прочие изменения</span>
 					<% else: %>
 						<li class="bPatchnote__menuItem">
-							<a href="/other/" data-reload-sections="pageView: #PatchnotesContent" data-reload-params='{ "dontScrollOnTransition": true }'>Прочие изменения</a>
+							<a href="/other/" data-reload-sections="pageView: #PatchnotesContent" data-reload-params="{ &quot;dontScrollOnTransition&quot;: true }">Прочие изменения</a>
 					<% end %>
 					</li>
 				</ul>
