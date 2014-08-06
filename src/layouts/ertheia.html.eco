@@ -2,10 +2,11 @@
 <html data-game="Lineage2RU" data-4game-uri="/lineage2/play/ertheia/">
 	<head>
 		<title><%=@document.title%></title>
+		<link href="/c/_favicons/lineage2.ico" rel="shortcut icon" type="image/ico"/>
 
-		<script src="/js/imgsupport.js"></script>
-		<script src="/js/jquery-1.10.2.min.js"></script>
-		<script src="/js/preload.js"></script>
+		<script src="/js/imgsupport.js" data-4game-ignore="true"></script>
+		<script src="/js/jquery-1.10.2.min.js" data-4game-ignore="true"></script>
+		<script src="/js/preload.js" data-4game-ignore="true"></script>
 	</head>
 	<body class="pL2Ertheia">
 
