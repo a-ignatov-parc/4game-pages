@@ -95,30 +95,6 @@ q
 }i
 {
     font-style: normal;
-}.pAtlTour_bFights__eTitle
-{
-    font: 700 30px/40px 'PT sans','Trebuchet MS',Arial,sans-serif;margin: 0 0 20px;text-align: center;color: #150405;
-}.pAtlTour_bFights__eFightsContainer
-{margin: 0 30px 40px;
-
-    text-align: justify;
-}.pAtlTour_bFights__eFightsContainer:after
-{display: inline-block;visibility: hidden;overflow: hidden;
-
-    width: 100%;height: 0;content: '';
-}.pAtlTour_bFights__eFight
-{display: inline-block;
-
-    width: 198px;padding: 10px;vertical-align: top;color: #0084b7;
-}.pAtlTour_bFights__eFight:hover
-{
-    color: #f22;
-}.pAtlTour_bFights__eFightImage
-{
-    margin: 0 0 7px;
-}.pAtlTour_bFights__eFightSign
-{
-    font-size: 13px;line-height: 18px;
 }.pAtlTour_bHiddenInfo__eLinkContainer
 {margin: 0 0 25px;
 
@@ -188,18 +164,18 @@ q
     list-style: decimal outside;
 }.pAtlTour_bHint
 {
-    font: 13px/18px Arial,sans-serif;position: absolute;z-index: 10;left: 50%;visibility: hidden;width: 500px;margin: 0 0 0 -250px;-webkit-transition: opacity 600ms ease-in-out 0ms,visibility 0ms linear 600ms;transition: opacity 600ms ease-in-out 0ms,visibility 0ms linear 600ms;text-align: left;opacity: 0;color: #555;
+    font: 13px/18px Arial,sans-serif;position: absolute;z-index: 10;left: 50%;visibility: hidden;width: 420px;margin: 0 0 0 -210px;-webkit-transition: opacity 600ms ease-in-out 0ms,visibility 0ms linear 600ms;transition: opacity 600ms ease-in-out 0ms,visibility 0ms linear 600ms;text-align: left;opacity: 0;color: #555;
+}.pAtlTour_bHint__mType_narrow
+{
+    width: 300px;margin: 0 0 0 -150px;
 }.pAtlTour_bHint:before
 {position: absolute;bottom: 100%;left: 50%;width: 11px;height: 5px;margin: 0 0 0 -5px;
 
     content: ' ';background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAFCAYAAACTphZWAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OTI4NkExQTIxNjk2MTFFNEJFNzU4NTEyRDg0REI3RDEiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OTI4NkExQTMxNjk2MTFFNEJFNzU4NTEyRDg0REI3RDEiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo5Mjg2QTFBMDE2OTYxMUU0QkU3NTg1MTJEODREQjdEMSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo5Mjg2QTFBMTE2OTYxMUU0QkU3NTg1MTJEODREQjdEMSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PsexIQcAAAB+SURBVHjaYszLzWNiQADGltYWBR4envlfvnxJrKmueQAU+w+TBClkhNLMtXW1ikCFexkZGW1BNIgPEoepY4IpLCouUhQWFt4NVCgPtgJIg/ggcbgGoDO4bty4ofnv37/7/7EAoPgDkDxIHcOF8xe0//79++A/HgCSB6kDCDAAm0NhJKWw460AAAAASUVORK5CYII=);
 }.pAtlTour_bHint__eContent
-{width: 360px;margin: 0 auto;padding: 26px 30px;
+{margin: 0 auto;padding: 26px 30px;
 
     border-radius: 3px;background: #fff;box-shadow: 0 5px 8px rgba(110,109,110,.5);
-}.pAtlTour_bHint__eContent__mType_narrow
-{
-    width: 240px;
 }.pAtlTour_bHint__eParagraph
 {
     margin: 0 0 5px;
@@ -224,29 +200,6 @@ q
 }.pAtlTour_bHint__eListItem:before
 {
     position: absolute;left: 0;content: '— ';
-}.pAtlTour_bInfo
-{
-    margin: 0 0 39px;
-}.pAtlTour_bInfo__eTitle
-{
-    font: 700 30px/40px 'PT Sans','Trebuchet MS',Arial,sans-serif;margin: 0 0 25px;text-align: center;
-}.pAtlTour_bInfo__eColumnContainer
-{
-    margin: 0 10px 0 40px;
-}.pAtlTour_bInfo__eColumnContainer:after
-{display: table;clear: both;
-
-    content: ' ';
-}.pAtlTour_bInfo__eColumn
-{float: left;
-
-    width: 33.33333333%;
-}.pAtlTour_bInfo__eColumnTitle
-{
-    font: 700 18px/20px 'PT Sans','Trebuchet MS',Arial,sans-serif;margin: 0 30px 11px 0;
-}.pAtlTour_bInfo__eColumnContent
-{
-    margin: 0 30px 0 0;
 }.pAtlTour_bLayout
 {
     font: 15px/20px Arial,sans-serif;overflow: hidden;padding: 50px 0 10px;background: #fff;
@@ -356,6 +309,30 @@ q
 }.pAtlTour_bRegister__eButton
 {
     margin: 0 0 15px;
+}.pAtlTour_bFights__eTitle
+{
+    font: 700 30px/40px 'PT sans','Trebuchet MS',Arial,sans-serif;margin: 0 0 20px;text-align: center;color: #150405;
+}.pAtlTour_bFights__eFightsContainer
+{margin: 0 30px 40px;
+
+    text-align: justify;
+}.pAtlTour_bFights__eFightsContainer:after
+{display: inline-block;visibility: hidden;overflow: hidden;
+
+    width: 100%;height: 0;content: '';
+}.pAtlTour_bFights__eFight
+{display: inline-block;
+
+    width: 198px;padding: 10px;vertical-align: top;color: #0084b7;
+}.pAtlTour_bFights__eFight:hover
+{
+    color: #f22;
+}.pAtlTour_bFights__eFightImage
+{
+    margin: 0 0 7px;
+}.pAtlTour_bFights__eFightSign
+{
+    font-size: 13px;line-height: 18px;
 }.pAtlTour_bSchedule
 {margin: 0 0 34px;
     padding: 15px 0 0;
@@ -370,4 +347,27 @@ q
 }.pAtlTour_bSchedule__eGames
 {
     width: 800px;height: 1200px;
+}.pAtlTour_bInfo
+{
+    margin: 0 0 39px;
+}.pAtlTour_bInfo__eTitle
+{
+    font: 700 30px/40px 'PT Sans','Trebuchet MS',Arial,sans-serif;margin: 0 0 25px;text-align: center;
+}.pAtlTour_bInfo__eColumnContainer
+{
+    margin: 0 10px 0 40px;
+}.pAtlTour_bInfo__eColumnContainer:after
+{display: table;clear: both;
+
+    content: ' ';
+}.pAtlTour_bInfo__eColumn
+{float: left;
+
+    width: 33.33333333%;
+}.pAtlTour_bInfo__eColumnTitle
+{
+    font: 700 18px/20px 'PT Sans','Trebuchet MS',Arial,sans-serif;margin: 0 30px 11px 0;
+}.pAtlTour_bInfo__eColumnContent
+{
+    margin: 0 30px 0 0;
 }

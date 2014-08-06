@@ -4,13 +4,17 @@
 		color: #555;
 		position: absolute;
 		left: 50%;
-		width: 500px;
-		margin: 0 0 0 -250px;
 		text-align: left;
 		visibility: hidden;
 		opacity: 0;
 		z-index: 10;
 		transition: opacity 600ms ease-in-out 0ms, visibility 0ms linear 600ms;
+		width: 420px;
+		margin: 0 0 0 -210px;
+		&__mType_narrow {
+			width: 300px;
+			margin: 0 0 0 -150px;
+		}
 		&:before {
 			content: ' ';
 			position: absolute;
@@ -23,14 +27,10 @@
 		}
 		&__eContent {
 			border-radius: 3px;
-			width: 360px;
 			padding: 26px 30px;
 			margin: 0 auto;
 			background: #fff;
 			box-shadow: 0 5px 8px rgba(110, 109, 110, 0.5);
-			&__mType_narrow {
-				width: 240px;
-			}
 		}
 		&__eParagraph {
 			margin: 0 0 5px;
