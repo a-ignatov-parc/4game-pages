@@ -1410,6 +1410,9 @@
   text-align: left;
   vertical-align: top;
 }
+.bPatchnoteContent blockquote table td img {
+  vertical-align: middle;
+}
 .bPatchnoteContent blockquote blockquote {
   padding: 0;
   margin: 0;
