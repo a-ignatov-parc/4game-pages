@@ -70,7 +70,7 @@ $(function() {
 
 
 
-	$('.pL2Ertheia_bPlanets__ePlanet').on('mouseenter', function() {
+	$('.pL2Ertheia_bPlanets__ePlanet').on('mouseover', function() {
 		if ($('.pL2Ertheia_bPlanets').hasClass('pL2Ertheia_bPlanets_mOpened') == false) {
 			$('.pL2Ertheia_bPlanets').addClass('pL2Ertheia_bPlanets_mPause');
 			if ($(this).hasClass('pL2Ertheia_bPlanets__ePlanet_mClasses')) {
@@ -84,7 +84,7 @@ $(function() {
 			}
 		}
 	});
-	$('.pL2Ertheia_bPlanets__ePlanet').on('mouseleave', function() {
+	$('.pL2Ertheia_bPlanets__ePlanet').on('mouseout', function() {
 		$('.pL2Ertheia_bPlanets').removeClass('pL2Ertheia_bPlanets_mPause');
 		$('.pL2Ertheia_bMainContent').removeClass('pL2Ertheia_bMainContent_mHoverEffect');
 		$('.pL2Ertheia_bPersonages').removeClass('pL2Ertheia_bPersonages_mHoverEffect');
