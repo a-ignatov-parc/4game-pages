@@ -77,13 +77,13 @@
 	            }else if( $(this).hasClass('pL2Ertheia_bPlanets__ePlanet_mVideo') ){
 	                $('.pL2Ertheia_bPersonage1').addClass('pL2Ertheia_bPersonage1_mHoverEffect');
 	            }else if( $(this).hasClass('pL2Ertheia_bPlanets__ePlanet_mLocation') ){
-	                $('.pL2Ertheia_bMainContent').addClass('pL2Ertheia_bMainContent_mHoverEffect');
+	                $('.pL2Ertheia_bMainContent__eBackground').addClass('pL2Ertheia_bMainContent__eBackground_mHoverEffect');
 	            }
 	        }
 	    });
 	    $('.pL2Ertheia_bPlanets__ePlanet').on('mouseleave', function(){
 	        $('.pL2Ertheia_bPlanets').removeClass('pL2Ertheia_bPlanets_mPause');
-	        $('.pL2Ertheia_bMainContent').removeClass('pL2Ertheia_bMainContent_mHoverEffect');
+	        $('.pL2Ertheia_bMainContent__eBackground').removeClass('pL2Ertheia_bMainContent__eBackground_mHoverEffect');
 	        $('.pL2Ertheia_bPersonages').removeClass('pL2Ertheia_bPersonages_mHoverEffect');
 	        $('.pL2Ertheia_bPersonage1').removeClass('pL2Ertheia_bPersonage1_mHoverEffect');
 	        $('.pL2Ertheia_bAlchemyAction').removeClass('pL2Ertheia_bAlchemyAction_mStart');
