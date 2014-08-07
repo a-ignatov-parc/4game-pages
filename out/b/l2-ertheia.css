@@ -921,11 +921,7 @@
   width: 736px;
   height: 600px;
   display: none;
-  -moz-transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  margin: -300px 0 0 -368px;
 }
 .pL2Ertheia_bModalDialog__eGlow {
   position: absolute;
@@ -1413,12 +1409,14 @@
 }
 .bPatchnoteContent blockquote table td {
   padding: 8px 10px 9px 20px;
-  font: 14px/24px Arial, sans-serif;
+  font: 14px/18px Arial, sans-serif;
   text-align: left;
   vertical-align: top;
 }
 .bPatchnoteContent blockquote table td img {
-  vertical-align: middle;
+  vertical-align: top;
+  float: left;
+  margin: 0 8px 4px 0;
 }
 .bPatchnoteContent blockquote blockquote {
   padding: 0;
