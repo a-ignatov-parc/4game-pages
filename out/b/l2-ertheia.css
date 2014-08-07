@@ -227,6 +227,7 @@
   width: 80%;
   background-repeat: no-repeat;
   background-position: center top;
+  pointer-events: none;
   opacity: 0;
   -webkit-transition: opacity 0.3s;
   transition: opacity 0.3s;
@@ -252,11 +253,11 @@
   top: -10px;
   width: 355px;
   height: 299px;
+  pointer-events: all;
   left: 50%;
   margin-left: -239px;
   background-repeat: no-repeat;
   background-position: -129px 10px;
-  pointer-events: all;
 }
 .webp .pL2Ertheia_bPersonage2__eHeadPersonage {
   background-image: url('bPersonage2/ePersonage2.webp');
@@ -300,6 +301,7 @@
   text-align: center;
   font-size: 22px;
   color: #fff;
+  transform: translate(-320px, 42px);
 }
 .pL2Ertheia_bPlanets__ePlanet:before {
   content: '';
@@ -351,14 +353,17 @@
 .pL2Ertheia_bPlanets_mStart .pL2Ertheia_bPlanets__ePlanet_mVideo {
   -webkit-animation-delay: -5s !important;
   animation-delay: -5s !important;
+  transform: translate(-240px, -160px) scale(0.8);
 }
 .pL2Ertheia_bPlanets_mStart .pL2Ertheia_bPlanets__ePlanet_mClasses {
   -webkit-animation-delay: -10s !important;
   animation-delay: -10s !important;
+  transform: translate(164px, -217px) scale(0.8);
 }
 .pL2Ertheia_bPlanets_mStart .pL2Ertheia_bPlanets__ePlanet_mLocation {
   -webkit-animation-delay: -15s !important;
   animation-delay: -15s !important;
+  transform: translate(161px, 20px);
 }
 .pL2Ertheia_bPlanets_mStart :hover .pL2Ertheia_bPlanets__ePlanet {
   animation-play-state: paused;
