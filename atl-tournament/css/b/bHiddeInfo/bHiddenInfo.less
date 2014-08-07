@@ -1,9 +1,8 @@
 .pAtlTour {
 	&_bHiddenInfo {
-		margin: 0 0 55px;
 		&__eLinkContainer {
 			text-align: center;
-			margin: 0 0 30px;
+			margin: 0 0 25px;
 		}
 		&__eLinkCloseContainer {
 			text-align: center;
@@ -13,13 +12,21 @@
 			margin: 0 20px;
 		}
 		&__eContainer {
-			background: url('../img/hiddenInfoPattern.png');
 			overflow: hidden;
 			max-height: 0;
-			transition: max-height 600ms linear, overflow 0ms linear 600ms;
+			transition: max-height 600ms linear, margin 600ms linear, overflow 0ms linear 600ms;
+			margin: 0 0 30px;
+			&__mType_rules {
+				background: url('../img/hiddenInfoPattern.png');
+			}
+			&__mType_bottom {
+				margin: 0;
+			}
 			&__mType_opened {
 				max-height: 2000px;
 				overflow: visible;
+				margin: 0 0 55px;
+				transition-delay: 0s;
 			}
 		}
 		&__eTitle {
