@@ -1229,8 +1229,7 @@
   background: #ebeff1;
   overflow: hidden;
 }
-/* ----------------------- [ Menu ]
-  */
+/* ----------------------- [ Menu ] */
 .bPatchnoteMenuContainer {
   width: 240px;
   height: 100%;
@@ -1269,7 +1268,6 @@
 }
 .bPatchnoteMenuContainer .bPatchnote__menuItem_active {
   height: auto;
-  zpadding-bottom: 13px;
   background: #ffcc00;
 }
 .bPatchnoteMenuContainer .bPatchnote__menuItem:not(.active):hover {
@@ -1298,8 +1296,7 @@
   background: #e9eaeb;
   cursor: pointer;
 }
-/* ----------------------- [ Content ]
-  */
+/* ----------------------- [ Content ] */
 .bPatchnoteContent {
   max-width: 960px;
   margin-left: 240px;
@@ -1390,6 +1387,7 @@
   padding: 36px 100px;
   background: #f6f4f4;
   /* таблицы и заголовки обрамляются в цитатах, чтобы сделать серый фон вокруг них */
+  /* двойная вложенная цитата делает таблиц шириной в 50%, чтобы можно было поставить 2 таблицы рядом */
 }
 .bPatchnoteContent blockquote h2 {
   margin: 0;
@@ -1413,14 +1411,14 @@
   background: #eeebeb;
 }
 .bPatchnoteContent blockquote table th {
-  padding: 0 10px 0 20px;
+  padding: 0 0 0 20px;
   font: bold 14px/24px Arial, sans-serif;
   text-align: left;
   vertical-align: top;
   border-bottom: 1px solid #dddbdb;
 }
 .bPatchnoteContent blockquote table td {
-  padding: 8px 10px 9px 20px;
+  padding: 8px 0 9px 20px;
   font: 14px/18px Arial, sans-serif;
   text-align: left;
   vertical-align: top;
@@ -1428,7 +1426,6 @@
 .bPatchnoteContent blockquote table td img {
   vertical-align: top;
   float: left;
-  margin: 0 8px 4px 0;
 }
 .bPatchnoteContent blockquote blockquote {
   padding: 0;
@@ -1462,338 +1459,4 @@
   font: italic 18px/28px Georgia, sans-serif;
   text-align: center;
   color: #000;
-}
-.bPatchnoteContent .bStandartTypeList {
-  list-style: none;
-  margin-left: 134px;
-  letter-spacing: -0.01em;
-  width: 640px;
-  margin-bottom: 30px;
-}
-.bPatchnoteContent .bStandartTypeList li {
-  list-style: none;
-  position: relative;
-  line-height: 28px;
-  text-indent: 0;
-  letter-spacing: 0;
-  margin-bottom: 8px;
-}
-.bPatchnoteContent .bStandartTypeList li:before {
-  content: '—';
-  position: absolute;
-  left: -23px;
-}
-.bPatchnoteContent .bPatchnote__eContentIcons {
-  width: 32px;
-  height: 32px;
-  background: #ffc000;
-  border: none;
-  outline: none;
-  border-radius: 5px;
-  vertical-align: middle;
-  display: inline-block;
-  position: relative;
-  margin-right: 8px;
-}
-.bPatchnoteContent .bPatchnote__eContentIcons + span {
-  display: inline-block;
-  width: 160px;
-  vertical-align: middle;
-}
-.bPatchnoteContent .bPatchnote__eBigImg {
-  width: 766px;
-  height: 480px;
-  border-radius: 5px;
-  background: #ffc000;
-  margin-left: 96px;
-}
-.bPatchnoteContent .bWithVoting {
-  margin-top: -16px;
-  margin-bottom: 58px;
-}
-.bPatchnoteContent .bWithVoting .bPatchnote__eListItemName {
-  width: 680px;
-}
-.bPatchnoteContent .bWithVoting li {
-  margin-left: 48px;
-  text-indent: 13px;
-  padding: 10px 0;
-  width: 866px;
-  position: relative;
-}
-.bPatchnoteContent .bWithVoting li span {
-  padding-left: 4px;
-  margin: 0;
-}
-.bPatchnoteContent .bWithVoting li:nth-child(1),
-.bPatchnoteContent .bWithVoting li:nth-child(2),
-.bPatchnoteContent .bWithVoting li:nth-child(3),
-.bPatchnoteContent .bWithVoting li:nth-child(4),
-.bPatchnoteContent .bWithVoting li:nth-child(5),
-.bPatchnoteContent .bWithVoting li:nth-child(6),
-.bPatchnoteContent .bWithVoting li:nth-child(7),
-.bPatchnoteContent .bWithVoting li:nth-child(8),
-.bPatchnoteContent .bWithVoting li:nth-child(9) {
-  text-indent: 23px;
-}
-.bPatchnoteContent .bWithVoting li:hover {
-  background: #f6f5f5;
-}
-.bPatchnoteContent .bWithVoting li .bLikes {
-  position: absolute;
-  top: 50%;
-  right: 30px;
-  font-size: 0;
-  margin-top: -12px;
-}
-.bPatchnoteContent .bWithVoting li .bLikes button {
-  background: none;
-  padding: 0;
-  margin: 0;
-  outline: none;
-  border: 1px solid #333333;
-  width: 33px;
-  height: 24px;
-  position: relative;
-  cursor: pointer;
-  opacity: 0.6;
-}
-.bPatchnoteContent .bWithVoting li .bLikes button:before {
-  content: '';
-  width: 12px;
-  height: 14px;
-  position: absolute;
-  background: url(../img/likes.png) no-repeat;
-  top: 50%;
-  left: 50%;
-  margin: -7px 0 0 -6px;
-}
-.bPatchnoteContent .bWithVoting li .bLikes button.plus {
-  margin-right: -1px;
-  border-radius: 3px 0 0 3px;
-}
-.bPatchnoteContent .bWithVoting li .bLikes button.plus:not(.active):hover {
-  opacity: 1;
-  border-radius: 3px;
-}
-.bPatchnoteContent .bWithVoting li .bLikes button.minus {
-  border-radius: 0 3px 3px 0;
-}
-.bPatchnoteContent .bWithVoting li .bLikes button.minus:before {
-  background-position: top right;
-}
-.bPatchnoteContent .bWithVoting li .bLikes button.minus:not(.active):hover {
-  opacity: 1;
-  border-radius: 3px;
-}
-.bPatchnoteContent .bWithVoting li .bLikes button.active {
-  background: #333333;
-}
-.bPatchnoteContent .bWithVoting li .bLikes button span {
-  padding: 0;
-  position: absolute;
-  width: 100%;
-  text-align: center;
-  top: -17px;
-  left: 0;
-  text-indent: -3px;
-  font-size: 11px;
-  color: #878787;
-  opacity: 0.5;
-}
-.bPatchnoteContent .bPatchnoteGrayBlock {
-  background: #f6f4f4;
-  padding: 0 0 27px 0;
-  margin: 0 0 55px 0;
-}
-.bPatchnoteContent .bPatchnoteGrayBlock h2 {
-  padding: 35px 0 25px 0;
-  font-size: 30px;
-  text-align: center;
-  letter-spacing: 0;
-  font-family: 'PT Sans', sans-serif;
-}
-.bPatchnoteContent .bPatchnoteGrayBlock .bTablePatchnote {
-  font-size: 14px;
-  padding: 0;
-  margin: 0;
-  border-spacing: 0;
-  width: 100%;
-}
-.bPatchnoteContent .bPatchnoteGrayBlock .bTablePatchnote article {
-  font-weight: bold;
-  letter-spacing: -0.02em;
-  overflow: hidden;
-  margin-bottom: 12px;
-}
-.bPatchnoteContent .bPatchnoteGrayBlock .bTablePatchnote article > div {
-  padding-bottom: 5px;
-  float: left;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-}
-.bPatchnoteContent .bPatchnoteGrayBlock .bTablePatchnote section {
-  margin-bottom: 14px;
-}
-.bPatchnoteContent .bPatchnoteGrayBlock .bTablePatchnote section .bTableRow {
-  overflow: hidden;
-  letter-spacing: -0.014em;
-  padding: 14px 0 11px 0;
-}
-.bPatchnoteContent .bPatchnoteGrayBlock .bTablePatchnote section .bTableRow > div {
-  min-height: 1px;
-  float: left;
-}
-.bPatchnoteContent .bPatchnoteGrayBlock .bTablePatchnote section .bTableRow > div:nth-child(1) {
-  font-weight: bold;
-  width: 241px;
-  margin-left: 55px;
-}
-.bPatchnoteContent .bPatchnoteGrayBlock .bTablePatchnote section .bTableRow > div:nth-child(2) {
-  width: 239px;
-  position: relative;
-  top: -7px;
-}
-.bPatchnoteContent .bPatchnoteGrayBlock .bTablePatchnote section .bTableRow > div:nth-child(3) {
-  width: 370px;
-  font-size: 12px;
-  line-height: 16px;
-  letter-spacing: -0.007em;
-}
-.bPatchnoteContent .bPatchnoteGrayBlock .bTablePatchnote section:hover {
-  background: #eeebeb;
-}
-.bPatchnoteContent .bPatchnoteGrayBlock .bTable__m3col article > div:nth-child(1) {
-  width: 240px;
-  margin-left: 54px;
-}
-.bPatchnoteContent .bPatchnoteGrayBlock .bTable__m3col article > div:nth-child(2) {
-  width: 241px;
-}
-.bPatchnoteContent .bPatchnoteGrayBlock .bTable__m3col article > div:nth-child(3) {
-  width: 266px;
-}
-.bPatchnoteContent .bPatchnoteGrayBlock .bTable__m3col > section .bTableRow > div:nth-child(1) {
-  font-weight: bold;
-  width: 241px;
-  margin-left: 55px;
-}
-.bPatchnoteContent .bPatchnoteGrayBlock .bTable__m3col > section .bTableRow > div:nth-child(2) {
-  width: 239px;
-  position: relative;
-  top: -7px;
-}
-.bPatchnoteContent .bPatchnoteGrayBlock .bTable__m3col > section .bTableRow > div:nth-child(3) {
-  width: 370px;
-  font-size: 12px;
-  line-height: 16px;
-  letter-spacing: -0.007em;
-}
-.bPatchnoteContent .bPatchnoteGrayBlock .bTable__m2col article {
-  margin-bottom: 0;
-}
-.bPatchnoteContent .bPatchnoteGrayBlock .bTable__m2col article > div {
-  padding: 35px 0 13px 0;
-}
-.bPatchnoteContent .bPatchnoteGrayBlock .bTable__m2col article > div:nth-child(1) {
-  margin-left: 175px;
-  width: 321px;
-}
-.bPatchnoteContent .bPatchnoteGrayBlock .bTable__m2col article > div:nth-child(2) {
-  width: 254px;
-}
-.bPatchnoteContent .bPatchnoteGrayBlock .bTable__m2col > section .bTableRow {
-  padding: 9px 0 11px 0;
-  line-height: 20px;
-}
-.bPatchnoteContent .bPatchnoteGrayBlock .bTable__m2col > section .bTableRow > div:nth-child(1) {
-  font-weight: normal;
-  width: 280px;
-  margin-left: 176px;
-}
-.bPatchnoteContent .bPatchnoteGrayBlock .bTable__m2col > section .bTableRow > div:nth-child(2) {
-  width: 239px;
-  margin-left: 40px;
-  top: 0;
-}
-.bPatchnoteContent .bPatchnoteGrayBlock .bTable__m2col > section .bTableRow.bTitleLine > div {
-  font-weight: bold;
-}
-.bPatchnoteContent .bPatchnoteGrayBlock .bTable__m2col > section .bTableRow:not(.bTitleLine):hover {
-  background: #eeebeb;
-}
-.bPatchnoteContent .bPatchnoteGrayBlock .bTable__m2col > section:hover {
-  background-color: transparent;
-}
-.bPatchnoteContent .bPatchnoteText2Col {
-  margin-bottom: 104px;
-  overflow: hidden;
-  line-height: 28px;
-}
-.bPatchnoteContent .bPatchnoteText2Col > div {
-  float: left;
-  width: 360px;
-  margin-left: 40px;
-}
-.bPatchnoteContent .bPatchnoteText2Col > div:first-child {
-  margin-left: 96px;
-}
-.bPatchnoteContent .bPatchnoteText2Col > div h4 {
-  font-size: 18px;
-  margin-bottom: 9px;
-}
-.bPatchnoteContent .bPatchnoteText2Col > div h4 span {
-  width: 300px;
-}
-.bPatchnoteContent .bPatchnoteText2Col > div p {
-  padding: 0;
-  margin: 0 0 40px 0;
-}
-.bPatchnoteContent .bDoubleTable {
-  overflow: hidden;
-}
-.bPatchnoteContent .bDoubleTable .bTablePatchnote {
-  width: 384px;
-  float: left;
-  margin-left: 80px;
-}
-.bPatchnoteContent .bDoubleTable .bTablePatchnote:last-child {
-  margin-left: 24px;
-}
-.bPatchnoteContent .bDoubleTable .bTablePatchnote article {
-  margin-bottom: 5px;
-}
-.bPatchnoteContent .bDoubleTable .bTablePatchnote article div {
-  letter-spacing: 0;
-}
-.bPatchnoteContent .bDoubleTable .bTablePatchnote article div:nth-child(1) {
-  width: 140px;
-  margin: 0;
-  text-indent: 14px;
-}
-.bPatchnoteContent .bDoubleTable .bTablePatchnote article div:nth-child(2) {
-  padding-left: 28px;
-  width: 216px;
-}
-.bPatchnoteContent .bDoubleTable .bTablePatchnote section .bTableRow {
-  padding: 11px 0;
-}
-.bPatchnoteContent .bDoubleTable .bTablePatchnote section .bTableRow div {
-  letter-spacing: 0;
-}
-.bPatchnoteContent .bDoubleTable .bTablePatchnote section .bTableRow div:nth-child(1) {
-  font-weight: normal;
-  width: 140px;
-  margin-left: 0;
-  text-indent: 14px;
-}
-.bPatchnoteContent .bDoubleTable .bTablePatchnote section .bTableRow div:nth-child(2) {
-  padding-left: 28px;
-  top: 0;
-  width: 216px;
-}
-.bPatchnoteContent .bDoubleTable .bTablePatchnote section .bTableRow:hover {
-  background: #eeebeb;
-}
-.bPatchnoteContent .bDoubleTable .bTablePatchnote section:hover {
-  background-color: transparent;
 }
