@@ -1257,6 +1257,7 @@
 .bPatchnoteMenuContainer .bPatchnote__menuItem a {
   color: inherit;
   text-decoration: none;
+  display: block;
 }
 .bPatchnoteMenuContainer .bPatchnote__menuItem_active {
   height: auto;
