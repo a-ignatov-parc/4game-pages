@@ -54,14 +54,15 @@
 
 			<div class="pL2Ertheia_bPersonages">
 				<div class="pL2Ertheia_bPersonage1">
-					<div class="pL2Ertheia_bPersonage1__eHeadPersonage"></div>
+					<div class="pL2Ertheia_bPersonage1__eBody"></div>
 					<div class="pL2Ertheia_bPersonage1__eEars pL2Ertheia_bPersonage1__eEars_mEarLeft"></div>
 					<div class="pL2Ertheia_bPersonage1__eEars pL2Ertheia_bPersonage1__eEars_mEarRight"></div>
 					<div class="pL2Ertheia_bPersonage1__eHeadHair"></div>
+					<div class="pL2Ertheia_bPersonage1__eHead"></div>
 				</div>
 				<div class="pL2Ertheia_bPersonage2">
-					<div class="pL2Ertheia_bPersonage2__eHeadPersonage">
-					</div>
+					<div class="pL2Ertheia_bPersonage2__eBody"></div>
+					<div class="pL2Ertheia_bPersonage2__eHead"></div>
 				</div>
 			</div>
 
@@ -206,32 +207,41 @@
 		<a name="patchnotes" id="patchnotes"></a>
 		<section class="bPatchnotePage" id="PatchnotesContent" data-target="PatchnotesContent">
 			<div class="bPatchnoteMenuContainer">
-				<h3 class="bPatchnote__menuTitle">Обновление 14.5
-					<span class="bPatchnote__menuDate">с 9.07.2014</span>
+				<h3 class="bPatchnote__menuTitle">Обновление EP 1.0
+					<span class="bPatchnote__menuDate">&#160;</span>
 				</h3>
 				<ul class="bPatchnote__menuItems">
 					<% if (@document.page == "index" || @document.page == "system"): %>
 						<li class="bPatchnote__menuItem bPatchnote__menuItem_active">
 							<span>Системные изменения</span>
+						</li>
+						<li class="bPatchnote__menuItem">
+							<ul class="bPatchnote__menuSubItems">
+								<li class="bPatchnote__menuSubItem"><a href="#fishing">Рыбалка</a></li>
+								<li class="bPatchnote__menuSubItem"><a href="#siege">Осада Иного Измерения</a></li>
+								<li class="bPatchnote__menuSubItem"><a href="#olympics">Великая Олимпиада</a></li>
+								<li class="bPatchnote__menuSubItem"><a href="#trade">Комиссионная торговля</a></li>
+								<li class="bPatchnote__menuSubItem"><a href="#chaos">Фестиваль хаоса</a></li>
+								<li class="bPatchnote__menuSubItem"><a href="#mammon">Торговец Маммона</a></li>
+								<li class="bPatchnote__menuSubItem"><a href="#abilities">Способности</a></li>
+								<li class="bPatchnote__menuSubItem"><a href="#clans">Кланы</a></li>
+							</ul>
 					<% else: %>
 						<li class="bPatchnote__menuItem">
 							<a href="/" data-reload-sections="pageView: { target: #PatchnotesContent, scrollOnTransition: false }">Системные изменения</a>
 					<% end %>
-<!--
-						<ul>
-							<li>Овервью</li>
-							<li>Рыбалка</li>
-							<li class="active">Осада Иного Измерения</li>
-							<li>Великая Олимпиада</li>
-							<li>Комиссионная торговля</li>
-							<li>Фестиваль хаоса</li>
-							<li>Торговец Маммона</li>
-						</ul>
--->
 					</li>
 					<% if (@document.page == "classes"): %>
 						<li class="bPatchnote__menuItem bPatchnote__menuItem_active">
 							<span>Классы</span>
+						</li>
+						<li class="bPatchnote__menuItem">
+							<ul class="bPatchnote__menuSubItems">
+								<li class="bPatchnote__menuSubItem"><a href="#personage">Персонаж</a></li>
+								<li class="bPatchnote__menuSubItem"><a href="#skills">Умения</a></li>
+								<li class="bPatchnote__menuSubItem"><a href="#subclasses">Подклассы</a></li>
+								<li class="bPatchnote__menuSubItem"><a href="#alchemy">Алхимия</a></li>
+							</ul>
 					<% else: %>
 						<li class="bPatchnote__menuItem">
 							<a href="/classes/" data-reload-sections="pageView: { target: #PatchnotesContent, scrollOnTransition: false }">Классы</a>
@@ -240,6 +250,14 @@
 					<% if (@document.page == "zones"): %>
 						<li class="bPatchnote__menuItem bPatchnote__menuItem_active">
 							<span>Зоны охоты</span>
+						</li>
+						<li class="bPatchnote__menuItem">
+							<ul class="bPatchnote__menuSubItems">
+								<li class="bPatchnote__menuSubItem"><a href="#spatialbarrier">Пространственный Барьер</a></li>
+								<li class="bPatchnote__menuSubItem"><a href="#windsforest">Лес Ветров</a></li>
+								<li class="bPatchnote__menuSubItem"><a href="#devilsisland">Остров Дьявола</a></li>
+								<li class="bPatchnote__menuSubItem"><a href="#changes">Изменения</a></li>
+							</ul>
 					<% else: %>
 						<li class="bPatchnote__menuItem">
 							<a href="/zones/" data-reload-sections="pageView: { target: #PatchnotesContent, scrollOnTransition: false }">Зоны охоты</a>
@@ -248,6 +266,14 @@
 					<% if (@document.page == "items"): %>
 						<li class="bPatchnote__menuItem bPatchnote__menuItem_active">
 							<span>Предметы</span>
+						</li>
+						<li class="bPatchnote__menuItem">
+							<ul class="bPatchnote__menuSubItems">
+								<li class="bPatchnote__menuSubItem"><a href="#pendants">Кулоны</a></li>
+								<li class="bPatchnote__menuSubItem"><a href="#recipes">Рецепты</a></li>
+								<li class="bPatchnote__menuSubItem"><a href="#talismans">Талисманы</a></li>
+								<li class="bPatchnote__menuSubItem"><a href="#otherchanges">Прочие изменения</a></li>
+							</ul>
 					<% else: %>
 						<li class="bPatchnote__menuItem">
 							<a href="/items/" data-reload-sections="pageView: { target: #PatchnotesContent, scrollOnTransition: false }">Предметы</a>
@@ -256,6 +282,13 @@
 					<% if (@document.page == "quests"): %>
 						<li class="bPatchnote__menuItem bPatchnote__menuItem_active">
 							<span>Квесты</span>
+						</li>
+						<li class="bPatchnote__menuItem">
+							<ul class="bPatchnote__menuSubItems">
+								<li class="bPatchnote__menuSubItem"><a href="#new">Новые квесты</a></li>
+								<li class="bPatchnote__menuSubItem"><a href="#deleted">Удаленные квесты</a></li>
+								<li class="bPatchnote__menuSubItem"><a href="#changed">Измененные квесты</a></li>
+							</ul>
 					<% else: %>
 						<li class="bPatchnote__menuItem">
 							<a href="/quests/" data-reload-sections="pageView: { target: #PatchnotesContent, scrollOnTransition: false }">Квесты</a>
@@ -264,6 +297,12 @@
 					<% if (@document.page == "other"): %>
 						<li class="bPatchnote__menuItem bPatchnote__menuItem_active">
 							<span>Прочие изменения</span>
+						</li>
+						<li class="bPatchnote__menuItem">
+							<ul class="bPatchnote__menuSubItems">
+								<li class="bPatchnote__menuSubItem"><a href="#interface">Интерфейс</a></li>
+								<li class="bPatchnote__menuSubItem"><a href="#otherchanges">Прочие изменения</a></li>
+							</ul>
 					<% else: %>
 						<li class="bPatchnote__menuItem">
 							<a href="/other/" data-reload-sections="pageView: { target: #PatchnotesContent, scrollOnTransition: false }">Прочие изменения</a>
