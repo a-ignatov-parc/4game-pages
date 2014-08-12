@@ -155,8 +155,6 @@
 					-webkit-transform: translate( -189px, -340px ) !important;
 					transform: translate( -189px, -340px ) !important;
 					&:hover:not(.active){
-						&:before{
-						}
 						&:after{
 							background-image: url('bPlanets/ePlanets2__hover.png');
 						}
@@ -173,27 +171,32 @@
 							background-image: url('bPlanets/ePlanets3__hover.png');
 
 							opacity: 0;
-							-webkit-transform: scale(0.7) translate(0, 0);
-							transform: scale(0.7) translate(0, 0);
+							-webkit-transform: scale(0.4) translate(30px, -20px);
+							transform: scale(0.4) translate(30px, -20px);
+
+							-webkit-transform-origin: 30% 80%;
+							transform-origin: 30% 80%;
 
 							-webkit-animation: planets3 1s linear infinite;
 							animation: planets3 1s linear infinite;
 
 							@keyframes planets3 {
-								 0% { opacity: 0; transform: scale(0.7) translate(0, 0); }
-								10% { opacity: 1; }
-								20% { transform: scale(0.7) translate(8px, -3px); }
-								40% { transform: scale(0.7) translate(-8px, -6px); }
-								70% { opacity: 1; }
-								80% { opacity: 0; transform: scale(0.8) translate(12px, -8px); }
+								  0% { opacity: 0; transform: scale(0.5) translate(30px, -20px); }
+								 10% { opacity: 1; }
+								 20% { transform: scale(0.55) translate(30px, -20px); }
+								 40% { transform: scale(0.60) translate(30px, -20px); }
+								 70% { opacity: 1; }
+								 80% { opacity: 0; transform: scale(0.65) translate(30px, -20px); }
+								100% { opacity: 0; transform: scale(0.70) translate(30px, -20px); }
 							}
 							@-webkit-keyframes planets3 {
-								 0% { opacity: 0; -webkit-transform: scale(0.7) translate(0, 0); }
-								10% { opacity: 1; }
-								20% { -webkit-transform: scale(0.7) translate(8px, -3px); }
-								40% { -webkit-transform: scale(0.7) translate(-8px, -6px); }
-								70% { opacity: 1; }
-								80% { opacity: 0; -webkit-transform: scale(0.8) translate(12px, -8px); }
+								  0% { opacity: 0; -webkit-transform: scale(0.5) translate(30px, -20px); }
+								 10% { opacity: 1; }
+								 20% { -webkit-transform: scale(0.55) translate(30px, -20px); }
+								 40% { -webkit-transform: scale(0.60) translate(30px, -20px); }
+								 70% { opacity: 1; }
+								 80% { opacity: 0; -webkit-transform: scale(0.65) translate(30px, -20px); }
+								100% { opacity: 0; -webkit-transform: scale(0.70) translate(30px, -20px); }
 							}
 						}
 					}
@@ -206,7 +209,19 @@
 					transform: translate( 64px, -340px ) !important;
 					&:hover:not(.active){
 						&:after{
+							opacity: 1;
 							background-image: url('bPlanets/ePlanets1__hover.png');
+							-webkit-animation: planets1 1s linear 1;
+							animation: planets1 1s linear 1;
+
+							@keyframes planets1 {
+								from { opacity: 0; }
+								to { opacity: 1; }
+							}
+							@-webkit-keyframes planets1 {
+								from { opacity: 0; }
+								to { opacity: 1; }
+							}
 						}
 					}
 					&:after{
