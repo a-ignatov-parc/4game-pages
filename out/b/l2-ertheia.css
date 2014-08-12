@@ -538,6 +538,47 @@
 }
 .pL2Ertheia_bPlanets_mOpened .pL2Ertheia_bPlanets__ePlanet_mLocation:hover:not(.active):after {
   background-image: url('bPlanets/ePlanets4__hover.png');
+  background-position: center bottom;
+  -webkit-transform: rotate(-4deg);
+  transform: rotate(-4deg);
+  -webkit-transform-origin: 30% 100% 0;
+  transform-origin: 30% 100% 0;
+  -webkit-animation: planets4 1s linear infinite;
+  animation: planets4 1s linear infinite;
+}
+@keyframes planets4 {
+  0% {
+    transform: rotate(-4deg);
+  }
+  40% {
+    transform: rotate(6deg);
+  }
+  60% {
+    transform: rotate(3deg);
+  }
+  80% {
+    transform: rotate(8deg);
+  }
+  100% {
+    transform: rotate(-4deg);
+  }
+}
+@-webkit-keyframes planets4 {
+  0% {
+    -webkit-transform: rotate(-4deg);
+  }
+  40% {
+    -webkit-transform: rotate(6deg);
+  }
+  60% {
+    -webkit-transform: rotate(3deg);
+  }
+  80% {
+    -webkit-transform: rotate(8deg);
+  }
+  100% {
+    -webkit-transform: rotate(-4deg);
+  }
 }
 .pL2Ertheia_bPlanets_mOpened .pL2Ertheia_bPlanets__ePlanet_mLocation:after {
   background-image: url('bPlanets/ePlanets4-gray.png');
