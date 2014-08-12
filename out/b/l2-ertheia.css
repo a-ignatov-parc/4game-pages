@@ -1,4 +1,4 @@
-@import url('http://fonts.googleapis.com/css?family=Philosopher:400,700&subset=cyrillic,latin');
+@import url('//fonts.googleapis.com/css?family=Philosopher:400,700&subset=cyrillic,latin');
 .pL2Ertheia_bMainContent {
   position: relative;
   max-width: 1200px;
@@ -1322,6 +1322,7 @@
 .bPatchnoteContent p > img {
   display: block;
   margin: 0 auto;
+  max-width: 100%;
 }
 .bPatchnoteContent hr {
   background: none;
