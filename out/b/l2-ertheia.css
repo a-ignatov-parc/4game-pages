@@ -425,8 +425,8 @@
   transition: width 1s linear, height 1s linear, background-size 1s linear;
 }
 .pL2Ertheia_bPlanets_mOpened .pL2Ertheia_bPlanets__ePlanet_mClasses {
-  -webkit-transform: translate(-189px, -340px) !important;
-  transform: translate(-189px, -340px) !important;
+  -webkit-transform: translate(-229px, -340px) !important;
+  transform: translate(-229px, -340px) !important;
 }
 .pL2Ertheia_bPlanets_mOpened .pL2Ertheia_bPlanets__ePlanet_mClasses:hover:not(.active):after {
   background-image: url('bPlanets/ePlanets2__hover.png');
@@ -435,8 +435,8 @@
   background-image: url('bPlanets/ePlanets2-gray.png');
 }
 .pL2Ertheia_bPlanets_mOpened .pL2Ertheia_bPlanets__ePlanet_mAlchemy {
-  -webkit-transform: translate(-63px, -340px) !important;
-  transform: translate(-63px, -340px) !important;
+  -webkit-transform: translate(-103px, -340px) !important;
+  transform: translate(-103px, -340px) !important;
 }
 .pL2Ertheia_bPlanets_mOpened .pL2Ertheia_bPlanets__ePlanet_mAlchemy:hover:not(.active):after {
   background-image: url('bPlanets/ePlanets3__hover.png');
@@ -504,8 +504,8 @@
   background-image: url('bPlanets/ePlanets3-gray.png');
 }
 .pL2Ertheia_bPlanets_mOpened .pL2Ertheia_bPlanets__ePlanet_mVideo {
-  -webkit-transform: translate(64px, -340px) !important;
-  transform: translate(64px, -340px) !important;
+  -webkit-transform: translate(24px, -340px) !important;
+  transform: translate(24px, -340px) !important;
 }
 .pL2Ertheia_bPlanets_mOpened .pL2Ertheia_bPlanets__ePlanet_mVideo:hover:not(.active):after {
   opacity: 1;
@@ -533,8 +533,8 @@
   background-image: url('bPlanets/ePlanets1-gray2.png');
 }
 .pL2Ertheia_bPlanets_mOpened .pL2Ertheia_bPlanets__ePlanet_mLocation {
-  -webkit-transform: translate(189px, -340px) !important;
-  transform: translate(189px, -340px) !important;
+  -webkit-transform: translate(149px, -340px) !important;
+  transform: translate(149px, -340px) !important;
 }
 .pL2Ertheia_bPlanets_mOpened .pL2Ertheia_bPlanets__ePlanet_mLocation:hover:not(.active):after {
   background-image: url('bPlanets/ePlanets4__hover.png');
@@ -589,6 +589,7 @@
 }
 .pL2Ertheia_bPlanets_mOpened .pL2Ertheia_bPlanets__ePlanet.active:after {
   opacity: 1;
+  box-shadow: 0 0 35px 0 rgba(255, 255, 255, 0.8);
 }
 @-webkit-keyframes orbit {
   0% {
