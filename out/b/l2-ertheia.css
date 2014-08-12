@@ -46,22 +46,28 @@
 }
 .pL2Ertheia_bMainContent__eTopText p {
   font-size: 15px;
+  font-family: Arial, sans-serif;
   line-height: 20px;
   width: 480px;
   margin: 0 auto;
 }
 .pL2Ertheia_bMainContent__eRightText {
   position: absolute;
-  z-index: 100;
   top: 192px;
   right: 24px;
   width: 196px;
+  font-size: 13px;
+  font-family: Arial, sans-serif;
   line-height: 15px;
   color: #b2c3d1;
-  font-size: 13px;
 }
 .pL2Ertheia_bMainContent__eRightText img {
   margin: 0 0 12px -7px;
+}
+.pL2Ertheia_bMainContent__ePseudoLink {
+  position: relative;
+  z-index: 102;
+  color: #b2c3d1;
 }
 .pL2Ertheia_bMainContent_eDownloadButton {
   position: absolute;
@@ -1437,6 +1443,10 @@
 .bPatchnoteContent blockquote blockquote table {
   width: 50%;
   float: left;
+}
+.bPatchnoteContent blockquote blockquote table:only-child {
+  float: none;
+  margin: 0 auto;
 }
 .bPatchnoteContent blockquote blockquote:after {
   display: block;
