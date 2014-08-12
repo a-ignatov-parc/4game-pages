@@ -428,11 +428,8 @@
   -webkit-transform: translate(-189px, -340px) !important;
   transform: translate(-189px, -340px) !important;
 }
-.pL2Ertheia_bPlanets_mOpened .pL2Ertheia_bPlanets__ePlanet_mClasses:hover:not(.active):before {
-  background-image: url('bPlanets/classes2-hover.gif');
-}
 .pL2Ertheia_bPlanets_mOpened .pL2Ertheia_bPlanets__ePlanet_mClasses:hover:not(.active):after {
-  opacity: 0;
+  background-image: url('bPlanets/ePlanets2__hover.png');
 }
 .pL2Ertheia_bPlanets_mOpened .pL2Ertheia_bPlanets__ePlanet_mClasses:after {
   background-image: url('bPlanets/ePlanets2-gray.png');
@@ -441,11 +438,57 @@
   -webkit-transform: translate(-63px, -340px) !important;
   transform: translate(-63px, -340px) !important;
 }
-.pL2Ertheia_bPlanets_mOpened .pL2Ertheia_bPlanets__ePlanet_mAlchemy:hover:not(.active):before {
-  background-image: url('bPlanets/alchemy-hover.gif');
-}
 .pL2Ertheia_bPlanets_mOpened .pL2Ertheia_bPlanets__ePlanet_mAlchemy:hover:not(.active):after {
+  background-image: url('bPlanets/ePlanets3__hover.png');
   opacity: 0;
+  -webkit-transform: scale(0.7) translate(0, 0);
+  transform: scale(0.7) translate(0, 0);
+  -webkit-animation: planets3 1s linear infinite;
+  animation: planets3 1s linear infinite;
+}
+@keyframes planets3 {
+  0% {
+    opacity: 0;
+    transform: scale(0.7) translate(0, 0);
+  }
+  10% {
+    opacity: 1;
+  }
+  20% {
+    transform: scale(0.7) translate(8px, -3px);
+  }
+  40% {
+    transform: scale(0.7) translate(-8px, -6px);
+  }
+  70% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+    transform: scale(0.8) translate(12px, -8px);
+  }
+}
+@-webkit-keyframes planets3 {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.7) translate(0, 0);
+  }
+  10% {
+    opacity: 1;
+  }
+  20% {
+    -webkit-transform: scale(0.7) translate(8px, -3px);
+  }
+  40% {
+    -webkit-transform: scale(0.7) translate(-8px, -6px);
+  }
+  70% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+    -webkit-transform: scale(0.8) translate(12px, -8px);
+  }
 }
 .pL2Ertheia_bPlanets_mOpened .pL2Ertheia_bPlanets__ePlanet_mAlchemy:after {
   background-image: url('bPlanets/ePlanets3-gray.png');
@@ -454,11 +497,8 @@
   -webkit-transform: translate(64px, -340px) !important;
   transform: translate(64px, -340px) !important;
 }
-.pL2Ertheia_bPlanets_mOpened .pL2Ertheia_bPlanets__ePlanet_mVideo:hover:not(.active):before {
-  background-image: url('bPlanets/video-hover.png');
-}
 .pL2Ertheia_bPlanets_mOpened .pL2Ertheia_bPlanets__ePlanet_mVideo:hover:not(.active):after {
-  opacity: 0;
+  background-image: url('bPlanets/ePlanets1__hover.png');
 }
 .pL2Ertheia_bPlanets_mOpened .pL2Ertheia_bPlanets__ePlanet_mVideo:after {
   background-image: url('bPlanets/ePlanets1-gray2.png');
@@ -467,11 +507,8 @@
   -webkit-transform: translate(189px, -340px) !important;
   transform: translate(189px, -340px) !important;
 }
-.pL2Ertheia_bPlanets_mOpened .pL2Ertheia_bPlanets__ePlanet_mLocation:hover:not(.active):before {
-  background-image: url('bPlanets/locations-hover.gif');
-}
 .pL2Ertheia_bPlanets_mOpened .pL2Ertheia_bPlanets__ePlanet_mLocation:hover:not(.active):after {
-  opacity: 0;
+  background-image: url('bPlanets/ePlanets4__hover.png');
 }
 .pL2Ertheia_bPlanets_mOpened .pL2Ertheia_bPlanets__ePlanet_mLocation:after {
   background-image: url('bPlanets/ePlanets4-gray.png');
@@ -535,6 +572,8 @@
   opacity: 1;
   -webkit-transition: opacity 0.5s linear 0.1s;
   transition: opacity 0.5s linear 0.1s;
+  -webkit-animation-play-state: running;
+  animation-play-state: running;
 }
 .pL2Ertheia_bAlchemyAction__eFeathers {
   position: absolute;
@@ -551,8 +590,8 @@
   width: 72px;
   height: 58px;
   background-position: -18px -51px;
-  -webkit-animation: eFeathers1__Move 3s linear infinite;
-  animation: eFeathers1__Move 3s linear infinite;
+  -webkit-animation: eFeathers1__Move 3s linear infinite paused;
+  animation: eFeathers1__Move 3s linear infinite paused;
 }
 .pL2Ertheia_bAlchemyAction__eFeathers_mFeather_2 {
   left: 570px;
@@ -560,8 +599,8 @@
   width: 85px;
   height: 108px;
   background-position: -216px -19px;
-  -webkit-animation: eFeathers2__Move 1.8s linear infinite;
-  animation: eFeathers2__Move 1.8s linear infinite;
+  -webkit-animation: eFeathers2__Move 1.8s linear infinite paused;
+  animation: eFeathers2__Move 1.8s linear infinite paused;
 }
 .pL2Ertheia_bAlchemyAction__eFeathers_mFeather_3 {
   left: 861px;
@@ -569,8 +608,8 @@
   width: 57px;
   height: 55px;
   background-position: -423px 0px;
-  -webkit-animation: eFeathers3__Move 2s linear infinite;
-  animation: eFeathers3__Move 2s linear infinite;
+  -webkit-animation: eFeathers3__Move 2s linear infinite paused;
+  animation: eFeathers3__Move 2s linear infinite paused;
 }
 .pL2Ertheia_bAlchemyAction__eFeathers_mFeather_4 {
   left: 945px;
@@ -578,8 +617,8 @@
   width: 91px;
   height: 53px;
   background-position: -9px -252px;
-  -webkit-animation: eFeathers4__Move 2s linear infinite;
-  animation: eFeathers4__Move 2s linear infinite;
+  -webkit-animation: eFeathers4__Move 2s linear infinite paused;
+  animation: eFeathers4__Move 2s linear infinite paused;
 }
 .pL2Ertheia_bAlchemyAction__eFeathers_mFeather_5 {
   left: 1041px;
@@ -587,8 +626,8 @@
   width: 82px;
   height: 57px;
   background-position: -213px -251px;
-  -webkit-animation: eFeathers5__Move 2.4s linear infinite;
-  animation: eFeathers5__Move 2.4s linear infinite;
+  -webkit-animation: eFeathers5__Move 2.4s linear infinite paused;
+  animation: eFeathers5__Move 2.4s linear infinite paused;
 }
 .pL2Ertheia_bAlchemyAction__eFeathers_mFeather_6 {
   left: 504px;
@@ -596,8 +635,8 @@
   width: 102px;
   height: 77px;
   background-position: -2px -440px;
-  -webkit-animation: eFeathers6__Move 2s linear infinite;
-  animation: eFeathers6__Move 2s linear infinite;
+  -webkit-animation: eFeathers6__Move 2s linear infinite paused;
+  animation: eFeathers6__Move 2s linear infinite paused;
 }
 .pL2Ertheia_bAlchemyAction__eFeathers_mFeather_7 {
   left: 1025px;
@@ -605,8 +644,8 @@
   width: 150px;
   height: 52px;
   background-position: -369px -458px;
-  -webkit-animation: eFeathers7__Move 2.5s linear infinite;
-  animation: eFeathers7__Move 2.5s linear infinite;
+  -webkit-animation: eFeathers7__Move 2.5s linear infinite paused;
+  animation: eFeathers7__Move 2.5s linear infinite paused;
 }
 .pL2Ertheia_bAlchemyAction__eFeathers_mFeather_8 {
   left: 881px;
@@ -614,8 +653,8 @@
   width: 77px;
   height: 43px;
   background-position: -428px -124px;
-  -webkit-animation: eFeathers8__Move 2.6s linear infinite;
-  animation: eFeathers8__Move 2.6s linear infinite;
+  -webkit-animation: eFeathers8__Move 2.6s linear infinite paused;
+  animation: eFeathers8__Move 2.6s linear infinite paused;
 }
 @-webkit-keyframes eFeathers1__Move {
   0% {
