@@ -13,10 +13,6 @@
 		<link type="text/css" rel="stylesheet" href="b/storeButtons/storeButtons.css">
 		<link type="text/css" rel="stylesheet" href="https://code.jquery.com/ui/1.11.0/themes/smoothness/jquery-ui.css">
 		<link type="text/css" rel="stylesheet" href="b/slider/slider.css">
-		<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.js"></script>
-		<script type="text/javascript" src="http://code.jquery.com/ui/1.11.0/jquery-ui.js"></script>
-		<script type="text/javascript" src="b/slider/slider.js"></script>
-		
 		<style type="text/css">
 
 		html, body, #skrollr-body {
@@ -32,11 +28,14 @@
 		}
 
 		</style>
+		<script type="text/javascript" src="r/skrollr.js"></script>
+		<script type="text/javascript" src="r/jquery-1.10.2.js"></script>
+		<script type="text/javascript" src="r/jquery-ui.js"></script>
 	</head>
 	<body data-4game-global-layout="no">
 		
 		<div id="skrollr-body">
-			<x-userbar-4game />
+			<x-userbar-4game></x-userbar-4game>
 
 			<div class="pofo-navigation">
 				<a class="pofo-navigation--item pofo-navigation--item-active"></a>
@@ -162,11 +161,10 @@
 				</section>
 		
 			</div>
-			<x-footer-4game />
+			<x-footer-4game></x-footer-4game>
 		</div>
 		
-		
-		<script type="text/javascript" src="r/skrollr.js"></script>
 		<script type="text/javascript" src="r/pofo.js"></script>
+		<script type="text/javascript" src="b/slider/slider.js"></script>
 	</body>
 </html>
