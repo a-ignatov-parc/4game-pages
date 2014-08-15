@@ -1,0 +1,40 @@
+.pofo-navigation {
+	position: fixed;
+	z-index: 10;
+	height: 100%;
+	width: 100px;
+	top: 0;
+	right: 0;
+	bottom: 0;
+
+	display: -webkit-box;
+	display: flex;
+	-webkit-box-orient: vertical;
+	flex-direction: column;
+
+	-webkit-box-pack: center;
+	justify-content: center;
+	-webkit-box-align: end;
+	align-items: flex-end;
+	
+	background-image: radial-gradient(ellipse at center, rgba(128, 168, 69, 1) 0, rgba(128, 168, 69, 1) 33px, rgba(128, 168, 69, 0) 100px);
+	background-repeat: no-repeat;
+	background-position: 0 50%;
+	background-size: 200px 200px;
+}
+
+.pofo-navigation--item {
+	display: block;
+	width: 8px;
+	height: 8px;
+	margin: 6px 12px;
+	background: white;
+	border-radius: 8px;
+	cursor: pointer;
+}
+
+.pofo-navigation--item-active {
+	-webkit-transform: scale(1.75);
+	transform: scale(1.75);
+	cursor: default;
+}

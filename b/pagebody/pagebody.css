@@ -1,0 +1,46 @@
+.pofo-pagebody {
+	position: relative;
+	height: 100%;
+	padding-bottom: 400px;
+	background-color: rgb(128, 168, 69);
+	overflow: hidden;
+}
+
+.pofo-pagebody--section {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	padding-bottom: 400px;
+	box-sizing: border-box;
+	left: 0;
+}
+
+.pofo-pagebody--section-intro {
+	z-index: 3;
+}
+
+.pofo-pagebody--section-fort {
+	z-index: 2;
+	opacity: 0;
+	-webkit-transform: translate(0px, 200px);
+	transform: translate(0px, 200px);
+	
+	box-shadow: 0 0 50px 5px #000;
+}
+
+.pofo-pagebody--section-robots {
+	z-index: 1;
+	opacity: 0;
+	-webkit-transform: translate(0px, 300px);
+	transform: translate(0px, 300px);
+	background-color: #000;
+}
+
+.pofo-pagebody--scene {
+	height: 100%;
+	box-shadow: 0 0 50px 2px #000 inset;
+}
+
+.pofo-pagebody--scene-robots {
+	box-shadow: 0 0 50px 2px #fc0 inset;
+}

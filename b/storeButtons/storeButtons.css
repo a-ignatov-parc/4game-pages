@@ -1,0 +1,22 @@
+.pofo-storeButtons--button {
+	display: inline-block;
+	width: 188px;
+	height: 56px;
+	
+	margin: 6px 0 6px 12px;
+	
+	background: #000;
+	border-radius: 8px;
+}
+
+.pofo-storeButtons--button-appstore {
+	background-image: url('app-store.svg');
+}
+
+.pofo-storeButtons--button-googleplay {
+	background-image: url('google-play.svg');
+}
+
+.pofo-storeButtons--button-soon {
+	opacity: 0.5;
+}

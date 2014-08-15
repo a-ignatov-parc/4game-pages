@@ -1,0 +1,181 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UtF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title>Pocket Fort</title>
+		<script type="text/javascript" src="r/mobile-detect.js"></script>
+		<link type="text/css" rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400&subset=latin,cyrillic">
+		<link type="text/css" rel="stylesheet" href="b/pagebody/pagebody.css">
+		<link type="text/css" rel="stylesheet" href="b/navigation/navigation.css">
+		<link type="text/css" rel="stylesheet" href="b/intro/intro.css">
+		<link type="text/css" rel="stylesheet" href="b/fort/fort.css">
+		<link type="text/css" rel="stylesheet" href="b/storeButtons/storeButtons.css">
+		<link type="text/css" rel="stylesheet" href="https://code.jquery.com/ui/1.11.0/themes/smoothness/jquery-ui.css">
+		<link type="text/css" rel="stylesheet" href="b/slider/slider.css">
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.js"></script>
+		<script type="text/javascript" src="http://code.jquery.com/ui/1.11.0/jquery-ui.js"></script>
+		<script type="text/javascript" src="b/slider/slider.js"></script>
+		
+		<style type="text/css">
+
+		html, body, #skrollr-body {
+			height: 100%;
+			margin: 0px;
+		}
+		
+		.userbar {
+			height: 35px;
+		}
+		.mobile .userbar {
+			height: 0;
+		}
+
+		</style>
+	</head>
+	<body>
+		
+		<div id="skrollr-body">
+			<section class="userbar">
+				<center>бар и все такое...<br><br></center>
+			</section>
+
+			<div class="pofo-navigation">
+				<a class="pofo-navigation--item pofo-navigation--item-active"></a>
+				<a class="pofo-navigation--item"></a>
+				<a class="pofo-navigation--item"></a>
+			</div>
+			
+			<div class="pofo-pagebody">
+				<section class="pofo-pagebody--section pofo-pagebody--section-intro"
+					data-120="z-index: 3;"
+					data-180="z-index: 1;"
+				>
+
+					<!-- отдельный блок intro – это весь перевый экран,
+					     элементы в нем связаны друг с другом так или иначе,
+					     поэтому делать разные блоки смысла мало -->
+					<section class="pofo-intro">
+						<!-- логотип выношу отдельно, чтобы он не становился полупрозрачным при скролле -->
+						<div class="pofo-intro--logo">
+							<!-- Логотип вставляю обычным <img>, чтобы грузился в первую очередь -->
+							<img class="pofo-intro--logoImage" src="b/intro/logo.png" width="446" height="179" alt="Pocket Fort">
+						</div>
+						
+						<!-- далее стрелка play и названия игры будут скрываться, поэтому делаю для них контейнер -->
+						<div class="pofo-intro--content"
+							data-100="opacity: 1;"
+							data-170="opacity: 0;"
+						>
+							<!-- кнопка Play:
+							     само увеличение делаем через transform: scale,
+							     чтобы использовать одну картинку,
+							     но также, можно сделать прикольные эффекты, если нужно – удобно -->
+							<div class="pofo-intro--play"><div class="pofo-intro--playButton"></div></div>
+							
+							<!-- Описание игры и ссылки на магазины в конце -->
+							<div class="pofo-intro--game">
+								<!-- С одной стороны идут иконка игры и описание -->
+								<div class="pofo-intro--descBlock">
+									<!-- иконка не особо нуждаетя в обрамляющем элементе -->
+									<img class="pofo-intro--icon" src="b/intro/icon.png" width="128" height="128" border="0" alt=""/>
+									<div class="pofo-intro--description">
+										<h1 class="pofo-intro--title">Pocket Fort</h1>
+										<p class="pofo-intro--slogan">Многопользовательская стратегия<br/>в мире будущего Земли</p>
+									</div>
+								</div>
+								
+								<!-- с другой – ссылки на магазины -->
+								<div class="pofo-intro--storeButtons">
+									<!-- сами кнопки сделаем отдельными блоками,
+										 поскольку они используются в нескольких местах
+										 а еще делаем их фоновыми картинками у ссылок,
+									     поскольку, во-первых это должны быть ссылки,
+									     а во-вторых, хорошо бы подставить SVG для всех,
+									     кроме 12-й Оперы, которая плохо на ретинах отображает SVG -->
+									<a href="" class="pofo-storeButtons--button pofo-storeButtons--button-appstore"></a>
+									<!-- в случае, когда кнопка еще не работает, то элемент становится обычным span'ом -->
+									<span href="" class="pofo-storeButtons--button pofo-storeButtons--button-googleplay pofo-storeButtons--button-soon"></span>
+								</div>
+							</div>
+						</div>
+					</section>
+
+				</section>
+		
+				<section class="pofo-pagebody--section pofo-pagebody--section-fort"
+					data-150="opacity: 0; z-index: 1; transform: translate(0px, 300px); -webkit-transform: translate(0px, 300px);"
+					data-200="opacity: 1; z-index: 3; transform: translate(0px, 200px); -webkit-transform: translate(0px, 200px);"
+					data-350="z-index: 2;"
+				>
+					<div class="pofo-fort">
+						<div class="pofo-fort--shadows">
+							<!-- Заголовок -->
+							<h1 class="pofo-fort--title">Развивай форт и&nbsp;защищайся от&nbsp;вторжений других игроков</h1>
+	
+							<!-- Нижняя часть со слайдером -->
+							<div class="pofo-fort--bottom">
+								<div class="pofo-fort--controls">
+									<div class="pofo-fort--label">Уровни Штаб-квартиры</div>
+									<div class="pofo-slider">
+										<!-- Числа в слайдере как раз и есть список – наконец можно использовать иные элементы, чем div ;-) -->
+										<ol class="pofo-slider--numbers">
+											<li class="pofo-slider--number">1</li>
+											<li class="pofo-slider--number"></li>
+											<li class="pofo-slider--number">3</li>
+											<li class="pofo-slider--number"></li>
+											<li class="pofo-slider--number">5</li>
+											<li class="pofo-slider--number"></li>
+											<li class="pofo-slider--number">7</li>
+											<li class="pofo-slider--number"></li>
+											<li class="pofo-slider--number">9</li>
+											<li class="pofo-slider--number"></li>
+											<li class="pofo-slider--number">11</li>
+										</ol>
+										<div class="pofo-slider--control ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all">
+											<span tabindex="0" class="ui-slider-handle ui-state-default ui-corner-all" style="left: 0%;"></span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="pofo-fort--stages">
+							<img src="b/fort/stage1.jpg" width="1" height="1">
+							<img src="b/fort/stage2.jpg" width="1" height="1">
+							<img src="b/fort/stage3.jpg" width="1" height="1">
+							<img src="b/fort/stage4.jpg" width="1" height="1">
+							<img src="b/fort/stage5.jpg" width="1" height="1">
+							<img src="b/fort/stage6.jpg" width="1" height="1">
+							<img src="b/fort/stage7.jpg" width="1" height="1">
+							<img src="b/fort/stage8.jpg" width="1" height="1">
+							<img src="b/fort/stage9.jpg" width="1" height="1">
+							<img src="b/fort/stage10.jpg" width="1" height="1">
+							<img src="b/fort/stage11.jpg" width="1" height="1">
+						</div>
+					</div>
+				</section>
+		
+				<section class="pofo-pagebody--section pofo-pagebody--section-robots"
+					data-350="opacity: 0; z-index: 1; transform: translate(0px, 500px); -webkit-transform: translate(0px, 500px);"
+					data-400="opacity: 1; z-index: 3; transform: translate(0px, 400px); -webkit-transform: translate(0px, 400px);"
+				>
+					<div class="pofo-pagebody--scene pofo-pagebody--scene-robots"></div>
+				</section>
+		
+			</div>
+			<section class="pofo-download">
+				<center>
+					<br><br><br>
+					кнопки скачать<br><br><br><br><br>
+					а также футер<br><br><br><br><br>
+					и всякие лицензии<br><br>
+				</center>
+			</section>
+		</div>
+		
+		
+		<script type="text/javascript" src="r/skrollr.js"></script>
+		<script type="text/javascript" src="r/pofo.js"></script>
+	</body>
+</html>
