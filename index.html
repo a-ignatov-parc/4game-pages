@@ -10,12 +10,13 @@
 		<link type="text/css" rel="stylesheet" href="b/navigation/navigation.css">
 		<link type="text/css" rel="stylesheet" href="b/intro/intro.css">
 		<link type="text/css" rel="stylesheet" href="b/fort/fort.css">
+		<link type="text/css" rel="stylesheet" href="b/robots/robots.css">
 		<link type="text/css" rel="stylesheet" href="b/storeButtons/storeButtons.css">
 		<link type="text/css" rel="stylesheet" href="https://code.jquery.com/ui/1.11.0/themes/smoothness/jquery-ui.css">
 		<link type="text/css" rel="stylesheet" href="b/slider/slider.css">
 		<style type="text/css">
 
-		html, body, #skrollr-body {
+		html, body {
 			height: 100%;
 			margin: 0px;
 		}
@@ -34,22 +35,20 @@
 		<div id="skrollr-body">
 			<x-userbar-4game></x-userbar-4game>
 
+			<div class="pofo-navigation--background"></div>
 			<div class="pofo-navigation">
-				<a class="pofo-navigation--item pofo-navigation--item-active"></a>
-				<a class="pofo-navigation--item"></a>
-				<a class="pofo-navigation--item"></a>
+				<a href="#intro"  class="pofo-navigation--item pofo-navigation--item-scene-1 pofo-navigation--item-active"></a>
+				<a href="#fort"   class="pofo-navigation--item pofo-navigation--item-scene-2"></a>
+				<a href="#robots" class="pofo-navigation--item pofo-navigation--item-scene-3"></a>
 			</div>
 			
-			<div class="pofo-pagebody">
-				<section class="pofo-pagebody--section pofo-pagebody--section-intro"
-					data-120="z-index: 3;"
-					data-180="z-index: 1;"
-				>
+			<div class="pofo-pagebody" style="">
+				<section class="pofo-pagebody--section pofo-pagebody--section-intro">
 
 					<!-- отдельный блок intro – это весь перевый экран,
 					     элементы в нем связаны друг с другом так или иначе,
 					     поэтому делать разные блоки смысла мало -->
-					<section class="pofo-intro">
+					<section class="pofo-intro" id="intro">
 						<!-- логотип выношу отдельно, чтобы он не становился полупрозрачным при скролле -->
 						<div class="pofo-intro--logo">
 							<!-- Логотип вставляю обычным <img>, чтобы грузился в первую очередь -->
@@ -59,7 +58,7 @@
 						<!-- далее стрелка play и названия игры будут скрываться, поэтому делаю для них контейнер -->
 						<div class="pofo-intro--content"
 							data-100="opacity: 1;"
-							data-170="opacity: 0;"
+							data-250="opacity: 0;"
 						>
 							<!-- кнопка Play:
 							     само увеличение делаем через transform: scale,
@@ -87,7 +86,7 @@
 									     поскольку, во-первых это должны быть ссылки,
 									     а во-вторых, хорошо бы подставить SVG для всех,
 									     кроме 12-й Оперы, которая плохо на ретинах отображает SVG -->
-									<a href="" class="pofo-storeButtons--button pofo-storeButtons--button-appstore"></a>
+									<a href="https://itunes.apple.com/app/id908194157" target="_blank" class="pofo-storeButtons--button pofo-storeButtons--button-appstore"></a>
 									<!-- в случае, когда кнопка еще не работает, то элемент становится обычным span'ом -->
 									<span href="" class="pofo-storeButtons--button pofo-storeButtons--button-googleplay pofo-storeButtons--button-soon"></span>
 								</div>
@@ -97,11 +96,7 @@
 
 				</section>
 		
-				<section class="pofo-pagebody--section pofo-pagebody--section-fort"
-					data-150="opacity: 0; z-index: 1; transform: translate(0px, 300px); -webkit-transform: translate(0px, 300px);"
-					data-200="opacity: 1; z-index: 3; transform: translate(0px, 200px); -webkit-transform: translate(0px, 200px);"
-					data-350="z-index: 2;"
-				>
+				<section class="pofo-pagebody--section pofo-pagebody--section-fort" id="fort">
 					<div class="pofo-fort">
 						<div class="pofo-fort--shadows">
 							<!-- Заголовок -->
@@ -127,7 +122,7 @@
 											<li class="pofo-slider--number">11</li>
 										</ol>
 										<div class="pofo-slider--control ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all">
-											<span tabindex="0" class="ui-slider-handle ui-state-default ui-corner-all" style="left: 0%;"></span>
+											<span tabindex="0" class="ui-slider-handle ui-state-default ui-corner-all" style="left: 100%;"></span>
 										</div>
 									</div>
 								</div>
@@ -150,15 +145,48 @@
 					</div>
 				</section>
 		
-				<section class="pofo-pagebody--section pofo-pagebody--section-robots"
-					data-350="opacity: 0; z-index: 1; transform: translate(0px, 500px); -webkit-transform: translate(0px, 500px);"
-					data-400="opacity: 1; z-index: 3; transform: translate(0px, 400px); -webkit-transform: translate(0px, 400px);"
-				>
-					<div class="pofo-pagebody--scene pofo-pagebody--scene-robots"></div>
+				<section class="pofo-pagebody--section pofo-pagebody--section-robots" id="robots">
+					<div class="pofo-robots">
+						<div class="profo-robots--mask">
+							<div class="pofo-robots--storeButtons-cont">
+								<div class="pofo-robots--storeButtons">
+									<a href="" class="pofo-storeButtons--button pofo-storeButtons--button-appstore"></a>
+									<span href="" class="pofo-storeButtons--button pofo-storeButtons--button-googleplay pofo-storeButtons--button-soon"></span>
+								</div>
+							</div>
+						</div>
+						<div class="profo-robots--title">собери уникального робота,<br/>который возглавит твою армию<div>Комбинируй десять базовых деталей с сотней дополнительных модулей</div></div>
+	
+						<div class="pofo-robot-area">
+							<div class="pofo-robot-params1-block">
+								<div class="pofo-robot-params-buttons"><div class="pofo-robot-params-button-prev dis"></div><div class="pofo-robot-params-button-next"></div></div>
+								<div class="pofo-robot-params-txt">Ближний&nbsp;бой</div>
+							</div>
+							<div class="pofo-robot-params2-block">
+								<div class="pofo-robot-params-buttons"><div class="pofo-robot-params-button-prev dis"></div><div class="pofo-robot-params-button-next"></div></div>
+								<div class="pofo-robot-params-txt">Быстрое&nbsp;перемещение</div>
+							</div>
+							<div class="pofo-robot-areawrap">
+								<div class="pofo-robot">
+									<div class="pofo-robot-foot pofo-robot-type1"></div>
+									<div class="pofo-robot-top pofo-robot-type1"></div>
+									<div class="pofo-robot-type1-tail"></div>
+									<div class="pofo-robot-top pofo-robot-type2"></div>
+									<div class="pofo-robot-foot pofo-robot-type2"></div>
+									<div class="pofo-robot-top pofo-robot-type3"></div>
+									<div class="pofo-robot-foot pofo-robot-type3"></div>
+								</div>
+							</div>
+						</div>
+					</div>
 				</section>
 		
+				<x-footer-4game>
+					<div style="height: 400px;">
+						футер...
+					</div>
+				</x-footer-4game>
 			</div>
-			<x-footer-4game></x-footer-4game>
 		</div>
 
 
@@ -171,7 +199,7 @@
 		<script type="text/javascript" src="r/jquery-1.10.2.js" data-4game-ignore></script>
 		<script type="text/javascript" src="r/jquery-ui.js"></script>
 		<script type="text/javascript" src="b/slider/slider.js"></script>
-		<script type="text/javascript" src="r/skrollr.js"></script>
+		<script type="text/javascript" src="b/robots/robots.js"></script>
 		<script type="text/javascript" src="r/pofo.js"></script>
 	</body>
 </html>

@@ -1,6 +1,6 @@
 .pofo-navigation {
 	position: fixed;
-	z-index: 10;
+	z-index: 7;
 	height: 100%;
 	width: 100px;
 	top: 0;
@@ -17,6 +17,17 @@
 	-webkit-box-align: end;
 	align-items: flex-end;
 	
+}
+
+.pofo-navigation--background {
+	position: fixed;
+	z-index: 3;
+	height: 100%;
+	width: 100px;
+	top: 0;
+	right: 0;
+	bottom: 0;
+
 	background-image: radial-gradient(ellipse at center, rgba(128, 168, 69, 1) 0, rgba(128, 168, 69, 1) 33px, rgba(128, 168, 69, 0) 100px);
 	background-repeat: no-repeat;
 	background-position: 0 50%;

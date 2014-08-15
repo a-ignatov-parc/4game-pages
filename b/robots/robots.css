@@ -1,0 +1,284 @@
+.pofo-robots {
+	height: 100%;
+    background-image: url("robots-scene-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-color: red;
+}
+.profo-robots--mask{
+	width:100%;
+	min-height:100%;
+	background: transparent url('robots-scene-mask.png') no-repeat 50% 50%;
+	background-size: cover;
+	position:absolute;
+	z-index:2;
+}
+
+.profo-robots--title{
+	position:relative;
+	z-index:3;
+	margin:0px auto 0px auto;
+	padding:10px 0px 0px 0px;
+	width:700px;
+	color:#fff;
+	text-transform:uppercase;
+	font: 300 37px/43px 'Open Sans', Arial, sans-serif;
+	text-align:center;
+}
+	.profo-robots--title div{
+		font-size:17px;
+		text-transform:none;
+		margin:20px 0px 0px 0px;
+	}
+
+
+.pofo-robot-area{
+	width:700px;
+	height:500px;
+	margin:0px auto;
+	padding:0px 35% 0px 0px;/*400px*/
+	position:relative;
+}
+	.pofo-robot-area .pofo-robot-areawrap{
+		width:950px;/*950*/
+		height:500px;
+		overflow:hidden;
+		position:relative;
+		z-index:1;
+	}
+		.pofo-robot-area .pofo-robot-params1-block{
+			position:absolute;
+			z-index:3;
+			left:750px;
+			top:147px;
+			color:#fff;
+			width:100px;
+		}
+		.pofo-robot-area .pofo-robot-params2-block{
+			position:absolute;
+			z-index:3;
+			left:750px;
+			top:274px;
+			color:#fff;
+			width:150px;
+		}
+
+		.pofo-robot-area .pofo-robot-params-buttons div{
+			width:29px;
+			height:30px;
+			float:left;
+			cursor:pointer;
+			margin:0px 2px 7px 2px;
+
+			-webkit-transition: -webkit-transform 0.1s linear;
+			transition: transform 0.1s linear;
+			-webkit-transform: scale(0.75);
+			transform: scale(0.75);
+		}
+
+		.pofo-robot-area .pofo-robot-params-buttons .pofo-robot-params-button-prev{
+			background:url(b_prev1.png) no-repeat 50% 50%;
+		}
+			.pofo-robot-area .pofo-robot-params-buttons .pofo-robot-params-button-prev.dis{
+				opacity:0.4;
+				cursor:default;
+			}
+			.pofo-robot-area .pofo-robot-params-buttons .pofo-robot-params-button-prev:hover{
+				-webkit-transform: scale(1);
+				transform: scale(1);
+			}
+				.pofo-robot-area .pofo-robot-params-buttons .pofo-robot-params-button-prev.dis:hover{
+					-webkit-transform: scale(0.75);
+					transform: scale(0.75);
+				}
+		.pofo-robot-area .pofo-robot-params-buttons .pofo-robot-params-button-next{
+			background:url(b_next1.png) no-repeat 50% 50%;
+		}
+			.pofo-robot-area .pofo-robot-params-buttons .pofo-robot-params-button-next.dis{
+				opacity:0.4;
+				cursor:default;
+			}
+			.pofo-robot-area .pofo-robot-params-buttons .pofo-robot-params-button-next:hover{
+				-webkit-transform: scale(1);
+				transform: scale(1);
+			}
+				.pofo-robot-area .pofo-robot-params-buttons .pofo-robot-params-button-next.dis:hover{
+					-webkit-transform: scale(0.75);
+					transform: scale(0.75);
+				}
+
+		.pofo-robot-area .pofo-robot-params-txt{
+			white-space:nowrap;
+			clear:both;
+		}
+
+.pofo-robot{
+	width:400px;
+	height:497px;
+	position:relative;
+	margin:0px auto 0px;
+}
+	.pofo-robot .pofo-robot-top{
+		width:400px;
+		height:390px;
+		position:absolute;
+		z-index:3;
+	}
+
+	.pofo-robot .pofo-robot-foot{
+		width:400px;
+		height:233px;
+		bottom:0px;
+		position:absolute;
+		z-index:2;
+	}
+		.pofo-robot-top.pofo-robot-type1{
+			background:url(robot1_t1_res1.png) no-repeat 0px 0px;
+			transition: transform 500ms ease-in-out;
+		}
+			.pofo-robot-type1-tail{
+				width:400px;
+				height:390px;
+				position:absolute;
+				z-index:1;
+				background:url(robot1_t1tail_res1.png) no-repeat 0px 0px;
+				transition: transform 500ms ease-in-out;
+			}
+		.pofo-robot-foot.pofo-robot-type1{
+			background:url(robot1_f1_res1.png) no-repeat 0px 0px;
+			transition: transform 500ms ease-in-out;
+		}
+		.pofo-robot-top.pofo-robot-type2{
+			background:url(robot2_t1_res1.png) no-repeat 0px 0px;
+			transition: transform 500ms ease-in-out;
+		}
+		.pofo-robot-foot.pofo-robot-type2{
+			background:url(robot2_f1_res1.png) no-repeat 0px 0px;
+			transition: transform 500ms ease-in-out;
+		}
+		.pofo-robot-top.pofo-robot-type3{
+			background:url(robot3_t1_res1.png) no-repeat 0px 0px;
+			transition: transform 500ms ease-in-out;
+		}
+		.pofo-robot-foot.pofo-robot-type3{
+			background:url(robot3_f1_res1.png) no-repeat 0px 0px;
+			transition: transform 500ms ease-in-out;
+		}
+		.pofo-robot-top.pofo-robot-type1.move_step1, .pofo-robot-top.pofo-robot-type2.move_step1, .pofo-robot-top.pofo-robot-type3.move_step1, .pofo-robot-type1-tail.move_step1,
+		.pofo-robot-foot.pofo-robot-type1.move_step1, .pofo-robot-foot.pofo-robot-type2.move_step1, .pofo-robot-foot.pofo-robot-type3.move_step1
+		{
+			transform: translate(0px, 0px);
+		}
+		.pofo-robot-top.pofo-robot-type1.move_step2, .pofo-robot-top.pofo-robot-type2.move_step2, .pofo-robot-top.pofo-robot-type3.move_step2, .pofo-robot-type1-tail.move_step2,
+		.pofo-robot-foot.pofo-robot-type1.move_step2, .pofo-robot-foot.pofo-robot-type2.move_step2, .pofo-robot-foot.pofo-robot-type3.move_step2
+		{
+			transform: translate(700px, 0px);
+		}
+		.pofo-robot-top.pofo-robot-type1.move_step3, .pofo-robot-top.pofo-robot-type2.move_step3, .pofo-robot-top.pofo-robot-type3.move_step3, .pofo-robot-type1-tail.move_step3,
+		.pofo-robot-foot.pofo-robot-type1.move_step3, .pofo-robot-foot.pofo-robot-type2.move_step3, .pofo-robot-foot.pofo-robot-type3.move_step3
+		{
+			transform: translate(1400px, 0px);
+		}
+
+
+.pofo-robots--storeButtons-cont {
+	position:absolute;
+	z-index:110;
+	bottom:100px;
+	left:0px;
+	width:100%;
+	margin:0px auto 350px;
+
+	display: -webkit-box;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	flex-direction: row;
+
+	-webkit-box-pack: justify;
+	justify-content: space-between;
+	-webkit-box-align: center;
+	align-items: center;
+	justify-content:center;
+	display:none;
+}
+
+.pofo-robots--storeButtons {
+	height:70px;
+	width:400px;
+	margin:0pa auto;
+
+	display: -webkit-box;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	flex-direction: row;
+
+	-webkit-box-pack: justify;
+	justify-content: space-between;
+	-webkit-box-align: center;
+	align-items: center;
+
+}
+
+
+
+ /* wide */
+@media screen and (min-width: 1300px) and (max-width:1900px) {
+	.profo-robots--title{
+		padding:40px 0px 0px 0px;
+	}
+	.pofo-robot-area{
+		width:960px;
+		height:690px;
+		padding:0px 200px 0px 0px;
+	}
+	.pofo-robot-area .pofo-robot-areawrap{
+		width:900px;
+		height:1090px;
+	}
+
+	.pofo-robot{
+		width:500px;
+		height:634px;
+	}
+
+	.pofo-robot .pofo-robot-top{
+		width:500px;
+		height:497px;
+	}
+
+	.pofo-robot .pofo-robot-foot{
+		width:500px;
+		height:295px;
+	}
+		.pofo-robot-type1-tail{
+			width:500px;
+			height:497px;
+			background:url(robot1_t1tail_res2.png) no-repeat 0px 0px;
+		}
+		.pofo-robot .pofo-robot-top.pofo-robot-type1{
+			background:url(robot1_t1_res2.png) no-repeat 0px 0px;
+		}
+		.pofo-robot .pofo-robot-foot.pofo-robot-type1{
+			background:url(robot1_f1_res2.png) no-repeat 0px 0px;
+		}
+		.pofo-robot .pofo-robot-top.pofo-robot-type2{
+			background:url(robot2_t1_res2.png) no-repeat 0px 0px;
+		}
+		.pofo-robot .pofo-robot-foot.pofo-robot-type2{
+			background:url(robot2_f1_res2.png) no-repeat 0px 0px;
+		}
+		.pofo-robot .pofo-robot-top.pofo-robot-type3{
+			background:url(robot3_t1_res2.png) no-repeat 0px 0px;
+		}
+		.pofo-robot .pofo-robot-foot.pofo-robot-type3{
+			background:url(robot3_f1_res2.png) no-repeat 0px 0px;
+		}
+
+	.pofo-robots--storeButtons-cont {
+		display: -webkit-box;
+		display: flex;
+	}
+
+
+}

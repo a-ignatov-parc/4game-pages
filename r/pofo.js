@@ -1,58 +1,46 @@
-window.onload = function() {
-	var barHeight = (mobile)? 0 : 35,
-		gapSize = 200,
-		steps = 3,
-		s = null;
-
-	function setBodyHeight() {
-		document.getElementById('skrollr-body').style.height = window.innerHeight + 'px';
-		if (s) s.refresh();
-	}
-
-	setBodyHeight();
-	window.addEventListener('orientationchange', setBodyHeight);
-	window.addEventListener('resize', setBodyHeight);
-
-
-	var sto = 0;
-	function clearSTO() {
-		if (sto != 0) {
-			clearTimeout(sto);
-			sto = 0;
-		}
-	}
-
-	function isScrollStopped() {
-		scr = this;
-		clearSTO();
-		sto = setTimeout(function() {
-			scrollToAnchor(scr.getScrollTop());
-		}, 100);
-	}
-
-	function scrollToAnchor(currentScrollTop) {
-		clearSTO();
-//		console.log(currentScrollTop);
-		if (currentScrollTop > barHeight && currentScrollTop < (barHeight + gapSize * (steps - 0.5))) {
-			var nextStep = gapSize + barHeight;
-			while (currentScrollTop > nextStep - gapSize / 2) {
-				nextStep += gapSize;
-			}
-//			console.log(nextStep);
-			if (currentScrollTop < nextStep - gapSize / 2) {
-				s.animateTo(nextStep - gapSize, { duration: 100 });
-			} else {
-				s.animateTo(nextStep, { duration: 100 });
-			}
-		}
-	}
-
-	// init skrollr
-	s = skrollr.init({
-		forceHeight: true,
-		render: isScrollStopped
-	});
-
-
-};
+$(function() {
 	
+	var scrHeight = 0,
+		activeScene = 1,
+		cityAnimationExpected = true;
+
+	function init() {
+		scrHeight = window.innerHeight;
+		checkScene();
+	}
+	
+	function checkScene() {
+		var scrollPos = window.scrollY || window.pageYOffset;
+		var newScene = Math.round(scrollPos / scrHeight) + 1;
+		if (newScene != activeScene) {
+			$('.pofo-navigation--item-scene-' + activeScene).removeClass('pofo-navigation--item-active');
+			activeScene = newScene;
+			$('.pofo-navigation--item-scene-' + activeScene).addClass('pofo-navigation--item-active');
+		}
+		
+		// check for fort animation
+		if (cityAnimationExpected) {
+			if (Math.floor(scrollPos / scrHeight) + 1 == 2) {
+
+				var val = 10;
+				var timer = setInterval(function() {
+				    if (val > 4) {
+				        $('.pofo-slider--control').slider('value', val);
+				        val--;
+				    }
+				    else {
+				        clearInterval(timer);
+				    }
+				}, 500);
+
+				cityAnimationExpected = false;
+			}
+		}
+		
+	}
+
+	init();
+	$(window).on('resize', init);
+	$(document).on('scroll', checkScene);
+
+});

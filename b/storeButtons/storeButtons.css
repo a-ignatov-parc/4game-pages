@@ -18,5 +18,5 @@
 }
 
 .pofo-storeButtons--button-soon {
-	opacity: 0.5;
+	display: none;
 }
