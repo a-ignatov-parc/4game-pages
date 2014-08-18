@@ -64,7 +64,7 @@
 							     само увеличение делаем через transform: scale,
 							     чтобы использовать одну картинку,
 							     но также, можно сделать прикольные эффекты, если нужно – удобно -->
-							<div class="pofo-intro--play"><div class="pofo-intro--playButton"></div></div>
+							<div class="pofo-intro--play"><a href="/?popupWidget=VideoPopupWidget&amp;idVideo=AJSc0NDuTwk" data-reload-sections="VideoPopupWidget: {&quot;target&quot;:&quot;#OverlayContent&quot;,&quot;ns&quot;:&quot;popup&quot;}" class="pofo-intro--playButton"></a></div>
 							
 							<!-- Описание игры и ссылки на магазины в конце -->
 							<div class="pofo-intro--game">
@@ -147,45 +147,60 @@
 		
 				<section class="pofo-pagebody--section pofo-pagebody--section-robots" id="robots">
 					<div class="pofo-robots">
-						<div class="profo-robots--mask">
-							<div class="pofo-robots--storeButtons-cont">
-								<div class="pofo-robots--storeButtons">
-									<a href="" class="pofo-storeButtons--button pofo-storeButtons--button-appstore"></a>
-									<span href="" class="pofo-storeButtons--button pofo-storeButtons--button-googleplay pofo-storeButtons--button-soon"></span>
+						<!-- Для начала нужно расставить нормальные теги для текста
+						     заголовки – <h1>, абзац <p>, вся группа <header>.
+						     Заголовоко, даже, не смотря на то, что будет uppercase,
+						     нужно начинать с заглавной буквой.
+						     Перенос текста лучше, чтобы происходил естественно, т. е.
+						     из-за ограничения контейнера, а не из-за вставленного <br> -->
+						<header class="pofo-robots--header">
+							<h1 class="pofo-robots--title">Собери уникального робота, который возглавит твою армию</h1>
+							<p class="pofo-robots--description">Комбинируй десять базовых деталей с сотней дополнительных модулей</p>
+						</header>
+
+						<div class="pofo-robots--area">
+							<div class="pofo-robots--mask">
+								<div class="pofo-robots--container pofo-robots--container-tails">
+									<div class="pofo-robots--tail pofo-robots--tail-1"></div>
+									<div class="pofo-robots--tail pofo-robots--tail-2"></div>
+									<div class="pofo-robots--tail pofo-robots--tail-3"></div>
+								</div>
+								<div class="pofo-robots--container pofo-robots--container-legs">
+									<div class="pofo-robots--legs pofo-robots--legs-1"></div>
+									<div class="pofo-robots--legs pofo-robots--legs-2"></div>
+									<div class="pofo-robots--legs pofo-robots--legs-3"></div>
+								</div>
+								<div class="pofo-robots--container pofo-robots--container-chests">
+									<div class="pofo-robots--chest pofo-robots--chest-1"></div>
+									<div class="pofo-robots--chest pofo-robots--chest-2"></div>
+									<div class="pofo-robots--chest pofo-robots--chest-3"></div>
 								</div>
 							</div>
-						</div>
-						<div class="profo-robots--title">собери уникального робота,<br/>который возглавит твою армию<div>Комбинируй десять базовых деталей с сотней дополнительных модулей</div></div>
-	
-						<div class="pofo-robot-area">
-							<div class="pofo-robot-params1-block">
-								<div class="pofo-robot-params-buttons"><div class="pofo-robot-params-button-prev dis"></div><div class="pofo-robot-params-button-next"></div></div>
-								<div class="pofo-robot-params-txt">Ближний&nbsp;бой</div>
-							</div>
-							<div class="pofo-robot-params2-block">
-								<div class="pofo-robot-params-buttons"><div class="pofo-robot-params-button-prev dis"></div><div class="pofo-robot-params-button-next"></div></div>
-								<div class="pofo-robot-params-txt">Быстрое&nbsp;перемещение</div>
-							</div>
-							<div class="pofo-robot-areawrap">
-								<div class="pofo-robot">
-									<div class="pofo-robot-foot pofo-robot-type1"></div>
-									<div class="pofo-robot-top pofo-robot-type1"></div>
-									<div class="pofo-robot-type1-tail"></div>
-									<div class="pofo-robot-top pofo-robot-type2"></div>
-									<div class="pofo-robot-foot pofo-robot-type2"></div>
-									<div class="pofo-robot-top pofo-robot-type3"></div>
-									<div class="pofo-robot-foot pofo-robot-type3"></div>
+							
+							
+							<nav class="pofo-robots--controls">
+								<div class="pofo-robots--controlsGroup pofo-robots--chestControls">
+									<div class="pofo-robots--arrow pofo-robots--arrow-left pofo-robots--arrow-chests  pofo-robots--arrow-disabled"></div>
+									<div class="pofo-robots--arrow pofo-robots--arrow-right pofo-robots--arrow-chests"></div>
+									<p class="pofo-robots--controlsState">Ближний бой</p>
 								</div>
-							</div>
+
+								<div class="pofo-robots--controlsGroup pofo-robots--legsControls">
+									<div class="pofo-robots--arrow pofo-robots--arrow-left pofo-robots--arrow-legs  pofo-robots--arrow-disabled"></div>
+									<div class="pofo-robots--arrow pofo-robots--arrow-right pofo-robots--arrow-legs"></div>
+									<p class="pofo-robots--controlsState">Быстрое перемещение</p>
+								</div>
+							</nav>
 						</div>
+
 					</div>
 				</section>
 		
-				<x-footer-4game>
-					<div style="height: 400px;">
+				<div style="height: 400px; background: #2a0000; position: relative; z-index: 6;">
+					<x-footer-4game>
 						футер...
-					</div>
-				</x-footer-4game>
+					</x-footer-4game>
+				</div>
 			</div>
 		</div>
 
