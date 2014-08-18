@@ -22,11 +22,11 @@ $(function() {
 		if (cityAnimationExpected) {
 			if (Math.floor(scrollPos / scrHeight) + 1 == 2) {
 
-				var val = 10;
+				var val = 2;
 				var timer = setInterval(function() {
-				    if (val > 4) {
+				    if (val < 6) {
 				        $('.pofo-slider--control').slider('value', val);
-				        val--;
+				        val++;
 				    }
 				    else {
 				        clearInterval(timer);

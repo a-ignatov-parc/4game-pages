@@ -1,0 +1,1 @@
+$(function(){function o(o,e){e.value!=a&&($(".pofo-fort--stages").css("background-image",'url("b/fort/stage'+e.value+'.jpg")'),a=e.value)}var a=1;$(".pofo-slider--control").slider({min:1,max:11,value:1,stop:o,slide:o,change:o})});
