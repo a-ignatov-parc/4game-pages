@@ -1,0 +1,48 @@
+.pofo-download {
+	position: relative;
+	z-index: 7;
+	padding: 130px 20px 90px;
+	background: #2a0000;
+	text-align: center;
+}
+
+@media (max-width: 470px) {
+	.pofo-download {
+		height: 100%;
+		padding: 0;
+
+		display: -webkit-box;
+		display: flex;
+		-webkit-box-orient: vertical;
+		flex-direction: column;
+	
+		-webkit-box-pack: center;
+		justify-content: center;
+		-webkit-box-align: center;
+		align-items: center;
+	
+		background: #101e40;
+		background-image: radial-gradient(circle at center, #cf4242 0, #101e40 160px);
+	}
+	.pofo-download--dude {
+		position: relative;
+		width: 90%;
+		height: 210px;
+		box-sizing: border-box;
+		padding-top: 110px;
+		background: url('dude.png') no-repeat 50% 50%;
+		background-size: contain;
+	}
+	.pofo-download--dude:after {
+		position: absolute;
+		content: ' ';
+		width: 44px;
+		height: 18px;
+		top: 128px;
+		left: 50%;
+		margin-left: -72px;
+		background: url('dude-hand.png') no-repeat 50% 50%;
+		background-size: contain;
+		pointer-events: none;
+	}
+}

@@ -5,7 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 		<title>Pocket Fort</title>
 		<script type="text/javascript" src="r/mobile-detect.js"></script>
-		<link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400&subset=latin,cyrillic">
+		<link type="text/css" rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400&subset=latin,cyrillic">
 		<link type="text/css" rel="stylesheet" href="b/pagebody/pagebody.css">
 		<link type="text/css" rel="stylesheet" href="b/navigation/navigation.css">
 		<link type="text/css" rel="stylesheet" href="b/intro/intro.css">
@@ -14,21 +14,8 @@
 		<link type="text/css" rel="stylesheet" href="b/storeButtons/storeButtons.css">
 		<link type="text/css" rel="stylesheet" href="https://code.jquery.com/ui/1.11.0/themes/smoothness/jquery-ui.css">
 		<link type="text/css" rel="stylesheet" href="b/slider/slider.css">
-		<style type="text/css">
-
-		html, body {
-			height: 100%;
-			margin: 0px;
-		}
-		
-		.userbar {
-			height: 35px;
-		}
-		.mobile .userbar {
-			height: 0;
-		}
-
-		</style>
+		<link type="text/css" rel="stylesheet" href="b/download/download.css">
+		<link type="text/css" rel="stylesheet" href="b/footer/footer.css">
 	</head>
 	<body data-4game-global-layout="no">
 		
@@ -51,27 +38,25 @@
 					<section class="pofo-intro" id="intro">
 						<!-- логотип выношу отдельно, чтобы он не становился полупрозрачным при скролле -->
 						<div class="pofo-intro--logo">
+							<h1 class="pofo-intro--movieTitle">Создай армию и&nbsp;нападай на&nbsp;чужие территории</h1>
 							<!-- Логотип вставляю обычным <img>, чтобы грузился в первую очередь -->
-							<img class="pofo-intro--logoImage" src="b/intro/logo.png" width="446" height="179" alt="Pocket Fort">
+							<img class="pofo-intro--logoImage" src="b/intro/logo.png" alt="Pocket Fort">
 						</div>
 						
 						<!-- далее стрелка play и названия игры будут скрываться, поэтому делаю для них контейнер -->
-						<div class="pofo-intro--content"
-							data-100="opacity: 1;"
-							data-250="opacity: 0;"
-						>
+						<div class="pofo-intro--content">
 							<!-- кнопка Play:
 							     само увеличение делаем через transform: scale,
 							     чтобы использовать одну картинку,
 							     но также, можно сделать прикольные эффекты, если нужно – удобно -->
-							<div class="pofo-intro--play"><a href="/?popupWidget=VideoPopupWidget&amp;idVideo=AJSc0NDuTwk" data-reload-sections="VideoPopupWidget: {&quot;target&quot;:&quot;#OverlayContent&quot;,&quot;ns&quot;:&quot;popup&quot;}" class="pofo-intro--playButton"></a></div>
+							<div class="pofo-intro--play"><a href="/?popupWidget=VideoPopupWidget&amp;idVideo=E8b1qn0wEh0" data-reload-sections="VideoPopupWidget: {&quot;target&quot;:&quot;#OverlayContent&quot;,&quot;ns&quot;:&quot;popup&quot;}" class="pofo-intro--playButton"></a></div>
 							
 							<!-- Описание игры и ссылки на магазины в конце -->
 							<div class="pofo-intro--game">
 								<!-- С одной стороны идут иконка игры и описание -->
 								<div class="pofo-intro--descBlock">
 									<!-- иконка не особо нуждаетя в обрамляющем элементе -->
-									<img class="pofo-intro--icon" src="b/intro/icon.png" width="128" height="128" border="0" alt=""/>
+									<img class="pofo-intro--icon" src="b/intro/icon-retina.png" width="128" height="128" border="0" alt=""/>
 									<div class="pofo-intro--description">
 										<h1 class="pofo-intro--title">Pocket Fort</h1>
 										<p class="pofo-intro--slogan">Многопользовательская стратегия<br/>в мире будущего Земли</p>
@@ -91,6 +76,7 @@
 									<span href="" class="pofo-storeButtons--button pofo-storeButtons--button-googleplay pofo-storeButtons--button-soon"></span>
 								</div>
 							</div>
+							<div class="pofo-intro--arrow"></div>
 						</div>
 					</section>
 
@@ -195,8 +181,15 @@
 
 					</div>
 				</section>
+				
+				<section class="pofo-download">
+					<div class="pofo-download--dude">
+						<a href="https://itunes.apple.com/app/id908194157" target="_blank" class="pofo-storeButtons--button pofo-storeButtons--button-appstore pofo-storeButtons--button-bottomPage"></a>
+						<span href="" class="pofo-storeButtons--button pofo-storeButtons--button-googleplay pofo-storeButtons--button-soon"></span>
+					</div>
+				</section>
 		
-				<div style="background: #2a0000; position: relative; z-index: 6; padding-top: 150px;">
+				<div class="pofo-footer">
 					<x-footer-4game></x-footer-4game>
 				</div>
 			</div>

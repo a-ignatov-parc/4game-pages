@@ -93,3 +93,28 @@
 	top: 0;
 	left: 0;
 }
+
+
+@media (max-width: 700px) {
+	.pofo-fort--title {
+		font-size: 27px;
+		line-height: 33px;
+	}
+}
+
+@media (max-width: 470px) {
+	.pofo-fort--title {
+		box-sizing: border-box;
+		padding: 0 20px;
+		font-size: 20px;
+		line-height: 28px;
+	}
+	.pofo-fort--controls {
+		-webkit-box-orient: vertical;
+		flex-direction: column;
+	}
+	.pofo-fort--label {
+		margin: 0 0 7px 0;
+		font-size: 12px;
+	}
+}

@@ -2,7 +2,7 @@
 	position: fixed;
 	z-index: 7;
 	height: 100%;
-	width: 100px;
+	width: 10px;
 	top: 0;
 	right: 0;
 	bottom: 0;
@@ -48,4 +48,11 @@
 	-webkit-transform: scale(1.75);
 	transform: scale(1.75);
 	cursor: default;
+}
+
+@media (max-width: 470px) {
+	.pofo-navigation,
+	.pofo-navigation--background {
+		display: none;
+	}
 }
