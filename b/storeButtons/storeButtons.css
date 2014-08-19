@@ -12,9 +12,19 @@
 .pofo-storeButtons--button-appstore {
 	background-image: url('app-store.svg');
 }
+.opera .pofo-storeButtons--button-appstore {
+	background-image: url('app-store.png');
+	background-position: 50% 50%;
+	background-size: contain;
+}
 
 .pofo-storeButtons--button-googleplay {
 	background-image: url('google-play.svg');
+}
+.opera .pofo-storeButtons--button-googleplay {
+	background-image: url('google-play.png');
+	background-position: 50% 50%;
+	background-size: contain;
 }
 
 .pofo-storeButtons--button-soon {

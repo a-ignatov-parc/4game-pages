@@ -7,3 +7,4 @@ var iOS = navigator.userAgent.match(/(iPad|iPhone|iPod)/ig),
 if (mobile) { document.documentElement.classList.add('mobile'); }
 if (iOS) { document.documentElement.classList.add('iOS'); }
 if (Android) { document.documentElement.classList.add('Android'); }
+if (window.opera) { document.documentElement.classList.add('opera'); }
