@@ -1,0 +1,52 @@
+.pofo-bgvideo--container {
+	position: absolute;
+	z-index: 2;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.mobile .pofo-bgvideo--container {
+	display: none;
+}
+
+.pofo-bgvideo--stretch {
+	display: inline-block;
+	width: 100%;
+	min-height: 100%;
+	position: relative;
+	top: 50%;
+	-webkit-transform: translate(0, -50%);
+			transform: translate(0, -50%);
+}
+.pofo-bgvideo--aspectRatioImage {
+	min-width: 100%;
+	min-height: 100%;
+}
+.pofo-bgvideo--video {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	height: 100%;
+	-webkit-transform: translate(-50%, 0);
+			transform: translate(-50%, 0);
+}
+.pofo-bgvideo--loadbar {
+	position: absolute;
+	z-index: 9;
+	bottom: 0;
+	left: 0;
+	height: 4px;
+	width: 0%;
+	font-size: 1px;
+	background: white;
+	-webkit-transition: width 0.5s linear;
+	        transition: width 0.5s linear;
+	-webkit-transition: opacity 2s ease-out;
+	        transition: opacity 2s ease-out;
+}
+.pofo-bgvideo--loadBar-state-finished {
+	opacity: 0;
+}

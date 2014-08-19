@@ -1,0 +1,1 @@
+var iOS=navigator.userAgent.match(/(iPad|iPhone|iPod)/gi),Android=navigator.userAgent.match(/(Android)/gi),mobile=iOS||Android;mobile&&document.documentElement.classList.add("mobile"),iOS&&document.documentElement.classList.add("iOS"),Android&&document.documentElement.classList.add("Android");
