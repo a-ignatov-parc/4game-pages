@@ -1,4 +1,4 @@
-$(function() {
+$(window).on('load', function() {
 	var $el = $('.pofo-bgvideo--video'),
 		$bar = $('.pofo-bgvideo--loadBar'),
 		playing = false;
@@ -13,7 +13,6 @@ $(function() {
 		if (!playing && $el && $el.length) {
 			$el[0].play();
 			playing = true;
-			console.log('playing');
 		}
 	};
 
@@ -21,7 +20,6 @@ $(function() {
 		if (playing && $el && $el.length) {
 			$el[0].pause();
 			playing = false;
-			console.log('paused');
 		}
 	};
 
