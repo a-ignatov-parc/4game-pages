@@ -39,3 +39,20 @@ html, body {
 .pofo-pagebody--scene-robots {
 	box-shadow: 0 0 50px 2px #fc0 inset;
 }
+
+
+@media (max-width: 470px) {
+	.bUIPopup__eWin {
+		min-width: 10%;
+	}
+	.bUIPopup__eLayout__mDefaultWidth_True {
+		min-width: 10%;
+	}
+	.bUIPopup__eLayout__mDefaultWidth_True iframe {
+		max-width: 100%;
+		max-height: 100%;
+		width: 270px;
+		height: 146px;
+	}
+}
+
