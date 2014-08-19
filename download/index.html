@@ -1,17 +1,17 @@
 <!doctype html>
-<html data-4game-page="empty">
-	<head>
+<html>
+	<head data-4game-scripts="no">
 		<title>Pocket Fort . . . перенаправляем . . .</title>
 		<script type="text/javascript">
 			var iOS = navigator.userAgent.match(/(iPad|iPhone|iPod)/ig),
-			    Android = navigator.userAgent.match(/(Android)/ig),
+			    Android = navigator.userAgent.match(/(Android)/ig);
 
 			if (iOS) {
 				document.location.href = 'https://itunes.apple.com/app/id908194157';
 //			} else if (Android) {
 //
 			} else {
-				document.location.path = '/pocket-fort/';
+				document.location.pathname = '/pocket-fort/';
 			}
 			
 		</script>

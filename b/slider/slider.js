@@ -1,9 +1,15 @@
 $(function(){
 
-	var currentValue = 1;
+	var currentValue = 1,
+		imgPaths = [];
+	
+	for (var i = 0; i < 11; i++) {
+		imgPaths.push($('#pocket-fort-stage-' + (i + 1)).attr('src'));
+	}
+
 	function changeFortStage(event, ui) {
 		if (ui.value != currentValue) {
-			$('.pofo-fort--stages').css('background-image', 'url("b/fort/stage' + ui.value + '.jpg")');
+			$('.pofo-fort--stages').css('background-image', 'url("' + imgPaths[ui.value - 1] + '")');
 			currentValue = ui.value;
 		}
 	}
