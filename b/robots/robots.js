@@ -3,8 +3,8 @@ $(document).ready(function(){
 	var robotsPosition = { 'chest': 3, 'legs': 3 },
 		robotsContainersSelector = { 'chest': '.pofo-robots--container-chests, .pofo-robots--container-tails', 'legs': '.pofo-robots--container-legs' },
 		robotsTypesDescriptions = {
-			'chest': ['Дальний бой', 'Средний бой', 'Ближний бой'],
-			'legs': ['Медленное перемещение', 'Среднее перемещение', 'Быстрое перемещение']
+			'chest': ['Атака по площади', 'Дальний бой', 'Ближний бой'],
+			'legs': ['Дополнительная броня', 'Быстрое перемещение', 'Преодоление стен']
 		};
 
 	$('.pofo-robots--arrow').on('click', function() {

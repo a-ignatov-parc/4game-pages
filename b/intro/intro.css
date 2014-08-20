@@ -26,7 +26,7 @@
 .pofo-intro--logo {
 	position: absolute;
 	z-index: 1;
-	height: 30%;
+	height: 36%;
 	min-height: 179px;
 	width: 100%;
 	top: 0;
@@ -50,6 +50,24 @@
 	height: 179px;
 }
 
+.pofo-intro--newTitleHolder {
+	position: relative;
+	height: 0px;
+	width: 80%;
+}
+.pofo-intro--newTitle {
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	margin: 0;
+	
+	font: 300 37px/43px 'Open Sans', Arial, sans-serif;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+}
 
 .pofo-intro--content {
 	position: relative;
@@ -64,9 +82,7 @@
 	top: 0;
 	left: 0;
 	
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
+	display: none;
 
 	-webkit-box-orient: vertical;
 	-ms-flex-direction: column;
@@ -122,9 +138,9 @@
 	-ms-flex-direction: row;
 	flex-direction: row;
 
-	-webkit-box-pack: justify;
-	-ms-flex-pack: justify;
-	justify-content: space-between;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
 
 	-webkit-box-align: center;
 	-ms-flex-align: center;
@@ -134,9 +150,7 @@
 .pofo-intro--descBlock {
 	width: 500px;
 
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
+	display: none;
 
 	-webkit-box-orient: horizontal;
 	-ms-flex-direction: row;
@@ -167,6 +181,22 @@
 	text-align: right;
 }
 
+.pofo-intro--arrow {
+	position: absolute;
+	bottom: 8%;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	width: 28px;
+	height: 28px;
+	border-bottom: 4px solid white;
+	border-left: 4px solid white;
+	
+	-webkit-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+
+
 @media (min-width: 470px) {
 	.pofo-intro--logo {
 		-webkit-box-align: center;
@@ -184,6 +214,10 @@
 	.pofo-intro--logoImage {
 		width: auto;
 		height: 70%;
+	}
+	.pofo-intro--newTitle {
+		font-size: 27px;
+		line-height: 33px;
 	}
 	.pofo-intro--title {
 		font: 400 27px/32px 'Open Sans', Arial, sans-serif;
@@ -247,6 +281,10 @@
 	}
 	
 	.pofo-intro--descBlock {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+
 		-webkit-box-orient: vertical;
 		-ms-flex-direction: column;
 		flex-direction: column;
@@ -267,18 +305,16 @@
 	}
 
 	.pofo-intro--arrow {
-		position: absolute;
 		top: -15%;
-		left: 0;
-		right: 0;
-		margin: 0 auto;
-		width: 28px;
-		height: 28px;
+		bottom: auto;
 		border-bottom: 2px solid white;
 		border-left: 2px solid white;
-		
-		-webkit-transform: rotate(-45deg);
-		transform: rotate(-45deg);
+	}
+
+	.pofo-intro--play {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
 	}
 	
 	.pofo-intro--logo {
@@ -288,7 +324,8 @@
 		min-height: 0px;
 		
 	}
-	.pofo-intro--logoImage {
+	.pofo-intro--logoImage,
+	.pofo-intro--newTitleHolder {
 		display: none;
 	}
 	.pofo-intro--movieTitle {
