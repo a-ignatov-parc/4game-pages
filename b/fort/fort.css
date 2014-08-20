@@ -27,15 +27,17 @@
 	margin: 0 auto;
 
 	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+
 	-webkit-box-orient: vertical;
+	-ms-flex-direction: column;
 	flex-direction: column;
 
 	-webkit-box-pack: center;
+	-ms-flex-pack: center;
 	justify-content: center;
-	-webkit-box-align: center;
-	align-items: center;
-	
+
 	font: 300 37px/43px 'Open Sans', Arial, sans-serif;
 	color: #fff;
 	text-align: center;
@@ -54,25 +56,37 @@
 	margin: 0 auto;
 	
 	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+
 	-webkit-box-orient: vertical;
+	-ms-flex-direction: column;
 	flex-direction: column;
 
 	-webkit-box-pack: center;
+	-ms-flex-pack: center;
 	justify-content: center;
+
 	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
 }
 
 .pofo-fort--controls {
 	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+
 	-webkit-box-orient: horizontal;
+	-ms-flex-direction: row;
 	flex-direction: row;
 
 	-webkit-box-pack: center;
+	-ms-flex-pack: center;
 	justify-content: center;
+
 	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
 }
 
@@ -111,6 +125,7 @@
 	}
 	.pofo-fort--controls {
 		-webkit-box-orient: vertical;
+		-ms-flex-direction: column;
 		flex-direction: column;
 	}
 	.pofo-fort--label {
