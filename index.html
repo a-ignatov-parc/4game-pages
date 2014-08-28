@@ -237,6 +237,12 @@
 		</script>
 		<script type="text/javascript" src="r/jquery-1.10.2.js" data-4game-ignore></script>
 		<script type="text/javascript" src="r/jquery-ui.min.js"></script>
+		<script type="text/javascript">
+			// Отмена хака для резолвинга анонимных модулей подключенных как скрипты.
+			if (typeof define === "function" && 'amd' in define) {
+				define.amd = true;
+			}
+		</script>
 		<script type="text/javascript" src="b/slider/slider.js"></script>
 		<script type="text/javascript" src="b/robots/robots.js"></script>
 		<script type="text/javascript" src="r/pofo.js"></script>
